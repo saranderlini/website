@@ -1,0 +1,67 @@
+body {
+    .footer {
+        height: none;
+        background-color: $beige;
+        .to-top-page {
+            img {
+                z-index: 999;
+                background-color: transparentize($text-white, 0.4);
+                backdrop-filter: blur(2px);
+                -webkit-backdrop-filter: blur(2px);
+                position: fixed;
+                @include subhead-icon;
+                display: inline-block;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        .footer {
+            .to-top-page {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    bottom: 2vh;
+                    left: 2vw; 
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 480px)and (max-width: 660px) {
+        .footer {
+            .to-top-page {
+                img {
+                    width: 45px;
+                    height: 45px;
+                    bottom: 2vh;
+                    left: 1vw;    
+                }
+            }
+        }
+    } 
+    @media only screen and (min-width: 661px)and (max-width: 900px) {
+        .footer {
+            .to-top-page {
+                img {
+                    width: 45px;
+                    height: 45px;
+                    bottom: 2vh;
+                    left: 2vw;    
+                }
+            }
+        }
+    } 
+    @media only screen and (min-width: 901px) {
+        .footer {
+            .to-top-page {
+                img {
+                    width: 47px;
+                    height: 47px;
+                    bottom: 2.5vh;
+                    left: 2.5vw;    
+                }
+            }
+        }
+    }
+}

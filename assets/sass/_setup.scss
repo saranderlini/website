@@ -1,0 +1,263 @@
+@font-face {
+    font-family: "fs";
+    src: url(../font/fs/FS/Me-Light.otf) format(otf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fs";
+    src: url(../font/fs/FS/Me-Bold.otf.otf) format(otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "fs";
+    src: url(../font/fs/FS/Me-Italic.otf.otf) format(otf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face { /* stronger, super bold */
+    font-family: "fs";
+    src: url(../font/fs/FS/Me-Heavy.otf.otf.otf) format(otf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Righteous";
+    src: url(../font/righteous/Righteous.ttf.woff) format(woff),
+        url('Righteous.ttf.svg#Righteous') format('svg'),
+        url('Righteous.ttf.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "fs", sans-serif;
+    font-weight: 300;
+
+    background-color: $beige;
+}
+
+em {
+    font-family: "fs", sans-serif;
+    font-style: italic;
+}
+
+strong {
+    font-family: "fs", sans-serif;
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Righteous";
+}
+
+
+/* setting paddings and margins */
+$space-amounts: (1,2,3,4,5);
+
+@each $space in $space-amounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+    .px-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    &:active,
+    &:visited,
+    &:link {
+        color: $black;
+    }
+    &:hover {
+        color: darken($beige, 30)
+    }
+}
+/* Responsive setup for main page (not other pages) */
+/* for iPhones (max-width: 479px) + smaller screens */
+@media only screen and (max-width: 479px) {
+    $base-font-size: 16px;
+    body {
+        font-size: $base-font-size;
+        .nav-bar {
+            min-height: fit-content; max-height: fit-content;
+            min-width: fit-content; max-width: fit-content;
+            border-radius: 50%;
+            padding: 11px;
+            margin: 5px;
+            top: 10px;
+        }    
+        .main {
+            .bg-home {
+               &::before {
+                    background-image: url(../img/tall-pad.svg);
+                    transform: rotateX(180deg);
+                }
+            .bg-text {
+                padding: 1.5rem 1rem;
+                strong {
+                    font-size: 19px;
+                }
+            }
+            }
+        }
+    }
+}
+
+/* smaller screens */
+@media only screen and (min-width: 480px) and (max-width: 660px) {
+    $base-font-size: 18px;
+    body {
+        font-size: $base-font-size;
+        .nav-bar {
+            min-height: fit-content; max-height: fit-content;
+            min-width: fit-content; max-width: fit-content;
+            border-radius: 50%;
+            padding: 11px;
+            margin: 5px;
+            top: 10px;
+        }
+
+        .main {
+            .bg-home {
+                height: 100vh;
+               &::before {
+                    background-image: url(../img/tall-pad.svg);
+                    transform: rotateX(180deg);
+                }
+            .bg-text {
+                font-size: calc($base-font-size + 0.2rem);
+                min-width: 25vw;
+                strong {
+                    font-size: calc($base-font-size + 0.5rem);
+                }
+            }
+            }
+            .introduction {
+                p {
+                    max-width: 90%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+/* medium-sized screens */
+@media only screen and 
+(min-width: 661px) and (max-width: 900px) {
+    $base-font-size: 20px;
+
+    body {
+        font-size: $base-font-size;
+        
+        .nav-bar {
+            min-height: 60px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            display: flex;
+            align-self: center;
+            align-items: center;
+            
+            .upper-title {
+                h3 {
+                    top: 20px;
+                }
+            }
+        }
+
+        .main {
+            .bg-home {
+                height: 80vh;
+
+            .bg-text {
+                width: 120px;
+
+                h1 {
+                    font-size: calc($base-font-size + 2rem);
+                }
+                strong {
+                    font-size: calc($base-font-size + 0.8rem);
+                }
+            }
+        }
+        }
+        .introduction {
+              max-width: 100%;
+              .title {
+                min-width: 12vw;
+                max-width: min-content;
+                word-wrap: break-word;
+                padding-right: 1rem;
+              }
+              p {
+                max-width: 75%;
+                margin: auto;
+              }
+        }
+}
+}
+
+
+/* large-sized screens */
+@media only screen and (min-width: 901px) {
+    $base-font-size: 20px;
+
+    body {
+        font-size: $base-font-size;
+        
+        .main {
+            .bg-home {
+                &::before {
+                    background-image: url(../img/colorful-pad.svg);
+                }
+
+                .bg-text {
+                    h1 {
+                        font-size: calc($base-font-size + 2.5rem);
+                    }
+                    strong {
+                        font-size: calc($base-font-size + 1rem);
+                    }
+                }
+            }
+        }
+        .introduction {
+            max-width: 100%;
+        .presentation {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                min-width: 12vw;
+                max-width: min-content;
+                padding-right: 1rem;
+            }
+            p {
+                width: 65%;
+                padding-left: 3vw;
+                padding-right: 5vw;
+            }
+        }
+        }
+    }
+}

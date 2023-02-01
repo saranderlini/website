@@ -1,0 +1,184 @@
+body {
+    height: 100%;
+    .nav-bar {
+        .sandwich {
+            ul {
+                .c {
+                    img {
+                        background-image: radial-gradient($text-white, $pale-yellow);
+                        border: $yellow;
+                    }
+                }
+            }
+        }
+    }
+    .portfolio-art {
+        /* Setting background */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            z-index: 0.11;
+            height: 100vh;
+            width: 100%;
+    
+            &::before {
+                @include bg-text;
+                background-image: url(../../img/colorful-pad.svg);
+                transform: rotate(180deg);
+                background-size: 50% 20% 10%;
+                background-repeat: repeat-y;
+                background-color: transparentize($white-transparent, 0.48);            
+                background-blend-mode: overlay;
+            }
+        /* Section containing the rotating elements */
+        .portfolio-box {
+            @include activity-par;
+            height: fit-content;
+            position: relative;
+            top: 25vh;
+            width: 100%;
+            padding: 2rem;
+            .portfolio-title {
+                @include window;
+                display: flex;
+                align-items: center;
+                margin: auto;
+                width: fit-content;
+                height: fit-content;
+                color: $text-black;
+                padding: 1rem;
+                img {
+                    @include subhead-icon;
+                    border-color: $blue;
+                    margin-right: 1rem;
+                }
+            }
+            .loading-section {
+                text-align: center;
+                /*color: lighten($text-black, 30);*/
+                padding: 3rem;
+                margin-bottom: 1rem;
+                i {
+                    background: linear-gradient($black, $blue-lila);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                }
+            }
+            .loading-desc {
+                line-height: 2rem;
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                .panick {
+                    color: $text-black;
+                    text-align: center;
+                }
+            }
+        }
+    }  
+    @media only screen and (max-width: 479px) {
+        .portfolio-art {
+            &::before {
+                background-image: url(../../img/tall-pad.svg);
+            }
+            .portfolio-box {
+                top: 15vh;
+                width: 99%;
+                height: fit-content;
+                .portfolio-title {
+                    font-size: 22px;
+                    flex-basis: 50%;
+                    padding-right: 0;
+
+                }
+                .loading-section {
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    i {
+                        padding: 5px;
+                    }
+                    .circle-two {
+                        display: none;
+                    }
+                    .circle-three {
+                        display: none;
+                    }
+                }
+                .loading-desc {
+                    width: 100%;
+                    padding-left: 1rem;
+                    line-height: 1.7rem;
+                    .panick {
+                        color: $text-black;
+                        font-size: 19px;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 480px) and (max-width: 660px) {
+        .portfolio-art {
+            &::before {
+                background-image: url(../../img/tall-pad.svg);
+            }
+            .portfolio-box {
+                top: 15vh;
+                .loading-section {
+                    padding: 1rem;
+                    i {
+                        padding: 8px;
+                    }
+                    .circle-three {
+                        display: none;
+                    }
+                }
+                .loading-desc {
+                    width: 100%;
+                    padding-left: 1rem;
+                    line-height: 1.7rem;
+                    .panick {
+                        color: $text-black;
+                        font-size: 19px;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+    }  
+    @media only screen and (min-width: 661px) and (max-width: 900px) {
+        .portfolio-art {
+            &::before {
+                background-image: url(../../img/mid-pad.svg);
+            }
+            .portfolio-box {
+                top: 15vh;
+                .loading-desc {
+                    word-break: keep-all;
+                    padding-left: 2rem;
+                    line-height: 2rem;
+                    -webkit-text-size-adjust: 20px;
+                    width: 90%;
+                    .panick {
+                        font-size: 21px;
+                        margin-bottom: 1rem;
+                        padding-left: none;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 901px) {
+        .portfolio-art {
+            .portfolio-box {
+                width: 95%;
+                top: 20vh;
+                .loading-desc {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

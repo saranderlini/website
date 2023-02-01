@@ -1,0 +1,54 @@
+/* This is the homepage */
+
+.main { /* background + text */
+
+    /* background image */
+    .bg-home {
+        @include bg-photo;
+        align-items: center;
+        justify-content: center;
+
+        /* so that the opacity does not imapct the text */
+        &::before {
+            @include bg-text;
+            background-image: url(../img/mid-pad.svg);
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+
+    }
+    
+    /* text displayed on background */
+    .bg-text {
+        /*&::before {
+            @include bg-text;
+            border-radius: 25px;
+            background-color: $text-black;
+            opacity: 0.9;
+        }
+        /* find the @mixin in the setup */
+        @include window;
+        background-color: $text-black;
+        border: 5px solid darken($text-white, 10);
+        border-radius: 25px;    
+        color: darken($text-white, 10);
+        display: inline-block;
+        padding: 1rem;
+        /*backdrop-filter: blur(10px);*/
+        position: absolute;
+        min-width: fit-content;
+        min-height: fit-content;
+        left: auto;
+        right: auto;
+        top: auto;
+        text-align: center;
+        text-shadow: none;
+        white-space: nowrap;
+        
+        h1 {
+            letter-spacing: 0.02em;
+            margin: 2px 5px;
+        }
+    }
+}
+

@@ -1,0 +1,75 @@
+.divider {
+    @include divider;
+}
+
+.introduction {    
+    line-height: 35px;
+    box-shadow: 10px 0 15px darken($beige, 4), -10px 0 15px darken($beige, 4);
+    padding: 2rem 0 0.5rem;
+    .presentation {
+        background-color: lighten($white-transparent, 3);
+        padding: 2rem 2rem;
+        box-shadow: 10px 0 12px rgb(92 94 95 / 67%), -10px 0 12px rgb(92 94 95 / 67%);
+        .title {
+            @include window;
+            @include tag;
+
+        .profilepic {
+            @include profile-picture;
+        }
+
+        .profilepic:hover {
+            width: 100px;
+            height: 100px;
+            #myMask {
+                #myCircle {
+                    stroke-width: 5px;
+                    @include maskhover;
+                }
+            }
+            #myPic {
+                @include profpichover;
+                src: url(/assets/img/sara-cropped.png);
+                transform: scale(2.5);
+            }
+        }
+        }
+    }
+
+    /* Second section */
+    section {
+        margin-top: 5vh;
+
+        .presentation {
+            background-color: lighten($white-transparent, 3);
+            .title {
+                @include window;
+                @include tag;
+                margin: 3px inherit;
+                
+                .profilepic {
+                    border: 9px solid $blue;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    width: 95px;
+                    height: 95px;
+                    
+                    #myVisionPicHover {
+                        display: none;
+                    }
+                }
+                
+                .profilepic:hover {
+                    border-color: lighten($salmon, 5);
+                    
+                    #myVisionPic {
+                        display: none;
+                    }
+                    #myVisionPicHover {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }   
+}

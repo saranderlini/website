@@ -1,0 +1,291 @@
+body {
+    .nav-bar {
+        align-items: center;
+        background-color: $white-transparent;
+        color: darken($white-transparent, 70%);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+
+        .sandwich {
+            display: flex;
+            cursor: pointer;
+            
+            .sandwich-logo {
+                min-width: 30px;
+                max-width: 30px;
+            }
+            a {
+                color: set-text-color($bg-body);
+                text-decoration: none; 
+                img {
+                    padding: 11px;
+                    width: 50px;
+                    height: 50px;
+                    background-color: darken($white-transparent, 20);
+                    border: 3px solid $text-black;
+                    border-radius: 50%;
+                }
+            }
+            a:hover {
+                background-color: lighten($beige, 5);
+            }
+        }
+    }
+    /* whatever goes on the right side of the nav-bar */
+    .upper-title {
+        white-space: nowrap;
+        color: darken($beige, 20);
+        height: fit-content;
+        /* homepage pic */
+        .navigation-right-pic {
+            width: 50px;
+            border: 3px solid $text-black;
+            border-radius: 50%;
+            background-color: $white-transparent;
+            -webkit-backdrop-filter: blur(1px);
+        }
+        /* any other page:home button */
+        .right-logo {
+            position: relative;
+            width: 60px;
+            cursor: pointer;
+            img {
+                padding: 11px;
+                width: 52px;
+                height: 52px;
+                background-color: darken($white-transparent, 20);
+                border: 3px solid $text-black;
+                border-radius: 50%;
+            }
+            h3 {
+                visibility: collapse;
+                color: transparent;
+                position: absolute;
+                bottom: 25%;
+            }
+        }
+        /* hovering on home logo */ 
+        .right-logo:hover {
+            img {
+                visibility: collapse;
+            }
+            h3 {
+                display: block;
+                margin: auto;
+                visibility: visible;
+                font-size: 1.25rem;
+                font-size: clamp(1.25rem, 1.1620074547390842rem + 0.21299254526091588vw, 1.375rem);                
+                color: $text-black;
+                transition-property: color;
+                transition-duration: 0.7s;
+                transition-timing-function: ease-in;
+                position: absolute;
+            }
+        }
+    }
+    @media only screen and (max-width: 660px) {
+        .nav-bar {
+            padding: 15px;
+        }
+    }
+    @media only screen and (min-width: 661px) and (max-width: 900px) {
+        .nav-bar {
+            padding: 15px 20px;
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        .sandwich {
+            position: relative;
+        
+            ul {
+                display: none;
+            }
+
+            /* hovering on the menu logo */
+            &:hover > ul {
+                visibility: visible;
+                transition-timing-function: ease-in;
+                
+                transition-duration: 1s;
+
+                border-bottom-right-radius: 90%;
+                display: flex;
+                flex-direction: column;
+                height: 146px;
+                list-style-type: none;
+                position: absolute;
+                white-space: nowrap;
+                width: 135px;
+                
+                
+                /* these are for the three icons */
+                .a, .b, .c { 
+                    position: relative;
+                    width: fit-content;
+
+                    .ufo-menu {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        h3 {
+                            color: transparent;
+                        }
+
+                        &:hover {
+                            background-color: darken($black, 5);
+                            margin-left: 1px;
+                            border-radius: 25px;
+                            
+                            h3 {
+                                color: $text-white;
+                                transition-property: color;
+                                transition-duration: 0.6s;
+                                transition-timing-function: ease-in;
+                                margin: 0 10px;                            
+                            }
+                        }
+                    }
+                }
+
+                /* positioning of the three icons */
+                @media only screen and (max-width: 661px) {
+                .a {
+                    bottom: 9px;
+                    left: 76px;
+                }
+                .b {
+                    bottom: 5px;
+                    left: 40px;
+                }
+                .c {
+                    bottom: 1px;    
+                }
+                }  
+                @media only screen and (min-width: 661px) and (max-width: 900px) {
+                    border-bottom-right-radius: 0;
+                    height: 200px;
+                    justify-content: space-evenly;
+                    max-width: fit-content;
+                    padding-top: 10px;
+                    top: 27px;
+                    left: -10px;
+                }
+            }    
+        }
+        /* Positioning of the home button on smaller screens */
+        @media only screen and (max-width: 660px) {
+            .upper-title {
+                position: fixed;
+                left: 85vw;
+                .right-logo:hover {
+                    h3 {
+                        bottom: 10%;
+                        right: 5%;
+                        background-color: lighten($black, 5);
+                        border-radius: 25px;
+                        padding: 0.5rem;
+                        color: $text-white;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 470px) {
+                .upper-title {
+                    left: 80vw;
+                }
+            }
+        }
+        @media only screen and (min-width: 661px) and (max-width: 900px) {
+            .upper-title {
+                position: fixed;
+                left: 90vw;
+                padding-top: 5px;
+                .right-logo {
+                    img {
+                        width: 45px;
+                        height: 45px;
+                    }    
+                }
+                .right-logo:hover {
+                    h3 {
+                        right: 25%;
+                        height: fit-content;
+                    }
+                }
+            }
+        }
+    } 
+
+    @media only screen and (min-width: 901px) {
+            .sandwich {
+                flex-basis: 50%;
+                .sandwich-logo {
+                    display: none;
+                }
+    
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+                    list-style-type: none;
+                    flex-basis: 100%;
+                    .a, .b, .c {
+                        flex-basis: 30%;
+                        
+                        img {
+                            display: block;
+                            margin: auto;
+                            position: relative;
+                            top: 24%;
+                        }
+                        h3 {
+                            visibility: collapse;
+                            color: transparent;
+                            
+                        }
+                    }
+                }
+                
+                .a:hover, .b:hover, .c:hover {
+                    img {
+                        visibility: collapse;
+                    }
+                    h3 {
+                        display: block;
+                        text-align: center;
+                        visibility: visible;
+                        font-size: clamp(1rem, -0.0020rem + 1.6016vw, 2rem);
+                        
+                        color: $text-black;
+                        transition-property: color;
+                        transition-duration: 0.7s;
+                        transition-timing-function: ease-in;
+                        
+                        position: relative;
+                        bottom: 25%;
+                    
+                    }
+                }
+            }
+        .upper-title {
+            display: flex;
+            padding: 10px;
+            position: relative;
+            bottom: -5px;
+            right: 30px;
+            height: 100%;
+            align-items: baseline;
+            .right-logo:hover {
+                h3 {
+                    height: fit-content;
+                }
+            }
+        }
+    }
+}

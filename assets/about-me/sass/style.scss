@@ -1,0 +1,14 @@
+@import "config";
+@import "../../sass/style";
+@import "about-me-navigation";
+@import "about-me-home";
+@import "timeline";
+@import "work";
+@import "skills";
+
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

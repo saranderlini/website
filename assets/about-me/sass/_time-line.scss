@@ -1,0 +1,245 @@
+
+    @media only screen and (max-width: 660px) {
+        .line {
+            padding-left: 15px;
+            border-left-width: 3px;
+            border-image: $pole-color;
+            border-left-style: dashed;
+            
+            .pole {
+                display: none;
+            }
+            .time {
+                .edu {
+                    list-style: none;
+                    min-width: 100%;
+                    .academia {
+                        position: relative;
+                        color: $text-black;
+                    }
+                }
+                .academia::before {
+                    @include small-bullet;
+                    left: -25px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 661px) and (max-width: 1000px) {
+
+        .second-type {
+            padding-left: 0;
+            padding-right: 0;
+            .line {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                height: 400px;
+                width: 100vw;
+                
+                .pole {
+                    height: 100px;
+                    border: none;
+                    border-bottom-width: 4px;
+                    border-bottom-style: solid; 
+                    border-image: linear-gradient(to right, $salmon, $blue) 25 60;
+                    position: relative;
+                    top: 100px;
+                }
+                .time {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-evenly;
+                    
+                    .edu {
+                        display: flex;
+                        font-size: calc(20px - 0.25rem);
+                        height: fit-content;
+                        list-style: none;
+                        position: relative;
+                        span {
+                            display: none;
+                        }
+                        .academia {
+                            color: $text-black;
+                            font-size: 20px;
+                            visibility: visible;
+                        }
+
+                        &:nth-child(odd) {
+                            align-items: center;
+                            top: 145px;
+                            min-width: 20vw;
+                            
+                            &:first-of-type {
+                                right: 100px;
+                            }
+                            &:last-of-type {
+                                left: 110px;
+                            }
+                            &::before {
+                                @include bullet-line;
+                                top: -50px;
+                                left: 55px;
+                            }
+                            &::after {
+                                @include small-bullet;
+                                top: -55px;
+                                left: 50px;
+                            }
+                        }
+                        &:nth-child(even) {
+                            align-items: center;
+                            bottom: 72px;
+                            position: relative;
+                            min-width: 30vw;
+                            left: 52px;
+                            &::before {
+                                @include small-bullet;
+                                left: 50px;
+                                top: 162px;
+                            }
+                            &::after {
+                                @include bullet-line;
+                                top: 115px;
+                                left: 55px;
+                            }
+                            @media only screen and (min-width: 661px) and (max-width: 789px) {
+                            &::after {
+                                @include bullet-line;
+                                height: 1vh;
+                                top: 150px;
+                                }    
+                            
+                        }
+                            @media only screen and (min-width: 790px) and (max-width: 890px) {
+                            &::after {
+                                @include bullet-line;
+                                height: 2vh;
+                                top: 130px;
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+
+    @media only screen and (min-width: 1001px) and (max-width: 1400px) {
+        .line {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 370px;
+            margin-bottom: 100px;
+            
+            .pole {
+                height: 100px;
+                border: none;
+                border-bottom-width: 4px;
+                border-bottom-style: solid; 
+                border-image: linear-gradient(to right, $salmon, $blue) 25 60;
+                position: relative;
+                top: 100px;
+            }
+            .time {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-evenly;
+                
+            .edu {
+                .academia {
+                    color: $text-black;
+                    font-size: 20px;
+                }
+                list-style: none;
+                position: relative;
+                font-size: calc(20px - 0.25rem);
+                &:nth-child(odd) {
+                    top: 110px;
+                    &:first-of-type {
+                        right: 50px;
+                    }
+                    &:last-of-type {
+                        left: 50px;
+                    }
+                    &::after {
+                        @include small-bullet;
+                        top: -20px;
+                        left: 50px;
+                    }
+                }
+                &:nth-child(even) {
+                    bottom: 110px;
+                    position: relative;
+                    &::before {
+                        @include small-bullet;
+                        position: absolute;
+                        left: 25%;
+                        top: 200px;
+                    }
+                }
+            }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1401px) {
+        .line {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 300px;
+            
+            .pole {
+                height: 100px;
+                border: none;
+                border-bottom-width: 4px;
+                border-bottom-style: solid; 
+                border-image: linear-gradient(to right, $salmon, $blue) 25 60;
+                position: relative;
+                top: 50px;
+            }
+            .time {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-evenly;
+                
+            .edu {
+                .academia {
+                    color: $text-black;
+                    font-size: 20px;
+                }
+                list-style: none;
+                position: relative;
+                font-size: calc(20px - 0.25rem);
+                &:nth-child(odd) {
+                    top: 60px;
+                    &:first-of-type {
+                        right: 50px;
+                    }
+                    &:last-of-type {
+                        left: 50px;
+                    }
+                    &::after {
+                        @include small-bullet;
+                        top: -20px;
+                        left: 50px;
+                    }
+                }
+                &:nth-child(even) {
+                    bottom: 100px;
+                    &::before {
+                        @include small-bullet;
+                        bottom: -4px;
+                        left: 50px;
+                    }
+                }
+            }
+            }
+        }
+    }

@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "fs";
+  src: url(../font/fs/FS/Me-Light.otf) format(otf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fs";
+  src: url(../font/fs/FS/Me-Bold.otf.otf) format(otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "fs";
+  src: url(../font/fs/FS/Me-Italic.otf.otf) format(otf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  /* stronger, super bold */
+  font-family: "fs";
+  src: url(../font/fs/FS/Me-Heavy.otf.otf.otf) format(otf);
+  font-weight: 900;
+}
+body {
+  font-family: "fs", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+em {
+  font-family: "fs", sans-serif;
+  font-style: italic;
+}
+
+strong {
+  font-family: "fs", sans-serif;
+  font-weight: 700;
+}
+
+/* smaller screens */
+@media only screen and (max-width: 550px) {
+  body .nav-bar {
+    min-height: 10vw;
+    background-color: rgba(255, 255, 255, 0.297);
+    width: fit-content;
+    border-radius: 50%;
+    padding: 11px;
+  }
+  body .nav-bar .upper-title {
+    display: none;
+  }
+  body .break {
+    height: 20px;
+    display: none;
+  }
+  body .main .bg-text {
+    font-size: 20px;
+    width: 110px;
+  }
+  body .section {
+    flex-direction: column;
+  }
+  body .section p:first-of-type {
+    padding-top: 20px;
+    padding: 10px 20px;
+  }
+}
+/* medium-sized screens */
+@media only screen and (min-width: 551px) and (max-width: 880px) {
+  body .nav-bar {
+    min-height: 65px;
+  }
+  body .break {
+    height: 65px;
+    display: none;
+  }
+  body .main .bg-home {
+    height: 60vh;
+  }
+  body .main .bg-text {
+    font-size: 20px;
+    width: 120px;
+  }
+}
+/* large-sized screens */
+@media only screen and (min-width: 881px) {
+  body .nav-bar {
+    min-height: 65px;
+  }
+  body .break {
+    height: 65px;
+    display: none;
+  }
+}
+.nav-bar {
+  align-items: center;
+  background-color: rgba(249, 246, 246, 0.657);
+  color: #d4d3c7;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.nav-bar .sandwich {
+  display: flex;
+}
+.nav-bar .sandwich .sandwich-logo {
+  width: 30px;
+}
+.nav-bar .upper-title {
+  white-space: nowrap;
+}
+@media only screen and (max-width: 880px) {
+  .nav-bar .sandwich {
+    position: relative;
+  }
+  .nav-bar .sandwich ul {
+    display: none;
+  }
+  .nav-bar .sandwich:hover > ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    visibility: visible;
+    position: absolute;
+    top: 40px;
+    background-color: #463d92;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .nav-bar .sandwich:hover > ul li {
+    padding: 4px;
+  }
+}
+@media only screen and (min-width: 881px) {
+  .nav-bar .sandwich {
+    flex-basis: 50%;
+  }
+  .nav-bar .sandwich .sandwich-logo {
+    display: none;
+  }
+  .nav-bar .sandwich ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-basis: 100%;
+  }
+}
+
+/* This is the homepage */
+.main {
+  /* background + text */
+  /* background image */
+  /* text displayed on background */
+}
+.main .bg-home {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  /* so that the opacity does not imapct the text */
+}
+.main .bg-home::before {
+  content: "";
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.main .bg-text {
+  background-color: rgba(128, 125, 125, 0.215);
+  color: #efedef;
+  font-size: 30px;
+  border: 4px solid #efedef;
+  border-radius: 5px;
+  padding: 5px;
+  white-space: nowrap;
+  width: 150px;
+  position: absolute;
+  min-width: fit-content;
+  left: 40%;
+  right: 40%;
+  top: 40%;
+  text-align: center;
+}
+
+/* section below the image */
+.section {
+  display: flex;
+  color: rgba(48, 47, 47, 0.861);
+  align-items: center;
+}
+.section p {
+  padding: 10px 20px;
+}
+.section p:first-of-type {
+  flex-basis: 40%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

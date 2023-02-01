@@ -1,0 +1,150 @@
+/* for setting color */
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return $text-black;
+    }   @else {
+        @return $text-white;
+    }
+}
+
+@mixin bg-photo {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+
+@mixin bg-text {
+    content: "";
+    background-size: cover;
+    background-position: center;
+    background-position: bottom center;
+    max-inline-size: 100%;            
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Outline for paragraph like the ones in the work-education page */
+@mixin activity-par {
+    background-color: darken($beige, 0.2);
+    backdrop-filter: blur(0);
+    box-shadow: 10px 0 12px darken($home-bg-color, 25), -10px 0 12px darken($home-bg-color, 25);
+    border-radius: 5px;
+    margin-top: 1rem;
+    
+} 
+
+/* to make window boxes, this one served first and foremost the bg-text */
+@mixin window {
+    color: $text-black;
+    text-shadow: $shadow;
+    /*border: 4px solid darken($text-white, 4);
+    border-radius: 5px;*/
+    letter-spacing: 0.02rem;
+    padding: 5px;
+    min-width: 250px;
+}
+
+/* to go with the window mixin */
+@mixin tag {
+    font-size: 30px;
+    margin: auto;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* create a division in the layout; height not set */
+@mixin divider {
+    display: block;
+    width: 100%;
+}
+
+/* for pictures wrapped by circles */
+@mixin profile-picture {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+/* for hovering, picture + mask*/
+    /* to upload the image, do it in the page scss */
+@mixin profpichover {
+    x: -33px;
+    y: -7px;
+}
+
+@mixin maskhover {
+    cx: 20;
+    cy: 20;
+    r: 19;
+}
+
+/* for icon in title, bit smaller than the one from the homepage */
+@mixin subhead-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-width: 4px;
+    border-style: solid;
+    padding: 5px;
+}
+
+/* timeline */ 
+@mixin pole-bar {
+    border: none;
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-image: $pole-color;
+}
+
+/* tag for small screen, attached to vertical timeline*/
+@mixin small-screen-card {
+    background-color: $white-transparent;
+    border: 3px solid lighten($text-black, 5);
+    border-radius: 15px;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+    padding: 5px;
+
+    position: relative;
+}
+
+/* small bullet point */
+@mixin small-bullet {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid $text-black;
+    background-color: $text-white;
+}
+
+@mixin medium-bullet {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid $text-black;
+    background-color: $text-white;
+}
+
+/* line attached to the small bullet */
+@mixin vertical-bullet-line {
+    content: "";
+    position: absolute;
+    border: none;
+    border-left: 4px dashed $salmon;
+    height: 5vh;
+}
+

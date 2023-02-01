@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>About me</title>
+        <meta name="viewport" width="content-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="../img/circle-sara.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?400&family=Righteous&display=swap">
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    </head>
+    <body id="top-contact">
+        <!-- Navigation bar -->
+        <nav class="nav-bar">
+            <div class="sandwich">
+                <img class="sandwich-logo" 
+                src="../img/menu-svgrepo-com.svg" alt="menu sidebar">
+                <ul>
+                    <li class="a"><a class="ufo-menu" href="../about-me/index.html"><img src="../img/activity.svg" alt="About Me">
+                        <h3>About Me</h3></a>
+                    </li>
+
+                    <li class="b"><a class="ufo-menu" href="../contact-me/index.html"><img src="../img/contact.svg" alt="Contact Me">
+                        <h3>Contact Me</h3></a>
+                    </li>
+                    
+                    <li class="c"><a class="ufo-menu" href="../portfolio/index.html"><img src="../img/portfolio.svg" alt="Portfolio">
+                        <h3>Portfolio</h3></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="upper-title">
+                <div class="right-logo"><a href="../../index.html"><img src="../img/home-about-me.svg" alt="Homepage">
+                    <h3 class="home">Home</h3></a>
+                </div>
+        </nav>
+        <main class="contact-header">
+            <!-- Section below the navigation bar,you may call it actual page -->
+            <section class="contact-bg">
+                <!-- Circle with photo -->
+                <svg viewBox="0 0 10 10" class="sara-contact-pic alpha mx-1">
+                    <mask id="myContactMask">
+                        <circle id="myContactCircle" cx="50%" cy="50%" r="100%" stroke-width="2%" fill="white" opacity="1"/>
+                    </mask>
+                     <image id="myContactPic" href="../img/sara-bg-removed.png" mask="url(#myContactMask)"></image>
+                </svg>
+                <!-- Container for contacts -->
+                <div class="contact-box p-2 m-3">
+                    <h1 class="py-1"><img src="../img/info.svg" alt="Contact info icon">Contact information</h1>
+                    <ul class="contact-list px-2">
+                        <li><i class="fa fa-envelope fa-lg" aria-hidden="true"></i><a href="mailto:sara.anderlini@hotmail.com"><address>sara.anderlini@hotmail.com</address></a> </li>
+                        <li><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i><address>+39 334 5446539</address></li>
+                        <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i><address>Bologna, 40122, Italy</address></li>
+                        <li class="social-links">
+                            <address>
+                                <a href="https://www.linkedin.com/in/sara-anderlini-656b6a193/">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/saranderlini">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/saranderlini/?hl=it"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </address>
+                        </li>
+                            
+                    </ul>
+                </div>
+                <!-- Form itself -->
+                <div class="inquiry m-3">
+                    <h2 class="p-2"><img class="touch px-1" src="../img/touch.svg" alt="Let's get in touch icon"> Let's get in touch</h2>
+                    <form targer="_self" autocomplete="on" method="get">
+                        <div class="form-row">
+                            <label for="first-name">First Name</label>
+                            <input id="first-name" name="name" type="text" placeholder="Anne" minlength="3" maxlength="15" autocapitalize="on" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="last-name">Last Name</label>
+                            <input id="last-name" name="last-name" type="text" placeholder="Walker" minlength="3" required autocapitalize="on">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="e-mail" id="email" placeholder="anne.walker@mail.com" required>
+                        </div>
+                        <div class="form-row phone">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" name="phone" placeholder="+1 123 456 7890" id="phone">
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Your message</label>
+                            <textarea name="Your message" id="message" cols="30" rows="10" placeholder="Type here your message, I am looking forward to hearing from you." autocapitalize="on"></textarea>
+                        </div>
+                        <input class="button" type="submit" value="Submit">
+                    </form>
+                </div>
+                <svg viewBox="0 0 10 10" class="second-contact-pic mx-1">
+                    <mask id="myContactMask">
+                        <circle id="myContactCircle" cx="50%" cy="50%" r="100%" stroke-width="2%" fill="white" opacity="1"/>
+                    </mask>
+                     <image id="myContactPic" href="../img/close-up.png" width="100%" x="0.5"  mask="url(#myContactMask)"></image>
+                </svg>
+            </section>
+        </main>
+        <footer class="footer">
+            <a class="to-top-page px-1" href="#top-contact"><img src="../img/upward.svg" alt="Back to top icon"></a>
+        </footer>
+    </body>
+</html>

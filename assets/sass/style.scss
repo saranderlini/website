@@ -1,0 +1,13 @@
+@import "global";
+@import "setup";
+@import "mixin";
+@import "navigation";
+@import "upper-home";
+@import "bottom-home";
+@import "footer";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

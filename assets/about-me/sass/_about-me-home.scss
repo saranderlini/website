@@ -1,0 +1,103 @@
+body {
+    height: 100%;
+    .nav-bar {
+        .sandwich {
+            ul {
+                .a {
+                    img {
+                        background-image: radial-gradient($text-white, $pale-yellow);
+                        border: $yellow;
+                    }
+                }
+            }
+        }
+    }
+    /* background */
+    .bg-about-me-home {
+        @include bg-photo;
+        justify-content: center;
+        z-index: 0.11;
+        height: 100%;
+
+        &::before {
+            @include bg-text;
+            background-image: url(../../img/colorful-pad.svg);
+            background-size: 100%;
+            background-repeat: repeat-y;
+            background-color: transparentize($white-transparent, 0.55);            
+            background-blend-mode: overlay;
+        }
+        /* wrapper for article */
+        article {
+        position: relative;
+        top: 10vh;
+        z-index: 0.9;
+            /* Look for the brief selector for changing the width of the first part in the About Me page */
+            .brief {
+                line-height: 2rem;
+                .title {
+                    @include window;
+                    @include tag;
+                    color: $text-black;
+                    img {
+                        @include subhead-icon;
+                        border-color: $yellow;
+                        padding: 5px;
+                    }
+                }
+            }
+            .second-type {
+            @include activity-par;
+            margin-top: 5rem;
+            &:first-child {
+                margin-top: 1rem;
+            }
+                .chapter-tag {
+                    @include window;
+                    @include tag;
+                    max-width: 40%;
+                }
+                img {
+                    @include subhead-icon;
+                    border-color: $blue;
+                }
+            }
+        }
+    }
+    /* Setting up different backgrounds, depending on responsiveness */
+    @media only screen and (max-width: 600px) {
+    .bg-about-me-home {
+        min-height: 100%;
+        &::before {
+            background-image: url(../../img/bg-about-me-small.svg);
+            background-size: 130%;
+        }
+        article {
+            .brief {
+                width: 90%;
+                margin: auto;   
+            }    
+        }
+    }   
+    }
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+        .bg-about-me-home {
+            min-height: fit-content;
+            &::before {
+                background-image: url(../../img/bg-about-me-medium.svg);
+            }
+        .brief {
+            width: 80%;
+            margin: auto;
+        }
+        }
+    }
+    @media only screen and (min-width: 991px) {
+        .brief {
+            p {
+                max-width: 70%;
+                margin: auto;
+            }
+        }
+    }
+}

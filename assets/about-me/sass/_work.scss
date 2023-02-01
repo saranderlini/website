@@ -1,0 +1,235 @@
+body {
+    .w-history {
+        @include activity-par;
+        margin-top: 5rem;
+        .w-title {
+            @include window;
+            @include tag;
+            max-width: 40%;
+        }
+        img {
+            @include subhead-icon;
+            border-color: $green;
+        }
+        .academia {
+            color: darken($text-black, 10);
+        }
+    }
+
+    @media only screen and (max-width: 660px) {
+
+        .w-history {
+            .pole {
+                @include pole-bar;
+                border-image: linear-gradient(to bottom, $blue, $green) 30 60;
+            }
+            .w-label {
+                @include small-screen-card;
+                &::before {
+                    @include small-bullet;
+                    top: 50%;
+                    left: -28px;
+                }
+                .academia {
+                    line-height: 1.9rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 661px) and (max-width: 900px) {
+        .w-history {
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: 70%;
+                height: 300px;
+                position: relative;
+                &::after {
+                    display: none;
+                    }
+                
+                /* First row */
+                &:first-of-type {
+                    flex-direction: row-reverse;
+                    justify-content: space-around;
+                    position: relative;
+                    list-style-type: none;
+                    /* Inserting the button for WW-GVC, relative to the timeline */
+                    &::before {
+                        content: "";
+                        @include medium-bullet;
+                        bottom: 35%;
+                        left: -12px;
+                    }
+                    /* Current job */
+                    .w-label:first-of-type {
+                        position: relative;
+                        width: 50%;
+                        bottom: 10px;
+                        left: 30px;
+                        text-align: end;
+                        /* Inserting the button above the current job*/
+                        &::before {
+                            content: "";
+                            @include medium-bullet;
+                            top: -43px;
+                            left: 75%;
+                        }                        
+                    }
+                    /* WW-GVC job */ 
+                    .w-label:last-of-type {
+                        position: relative;
+                        left: -90px;
+                        bottom: 20px;
+                    }
+                }
+                /* Second row */
+                &:last-of-type {
+                    position: relative;
+                    .w-label:first-of-type {
+                        position: relative;
+                        right: 40px;
+                        &::before {
+                            content: "";
+                            @include medium-bullet;
+                            right: 50%;
+                            top: -25px;
+                        }
+                    }
+                    /* NGO in Greece */ 
+                    .w-label:last-of-type {
+                        position: relative;
+                        left: 60px;
+                        text-align: right;
+                        
+                        position: relative;
+                            &::before {
+                                content: "";
+                                @include medium-bullet;
+                                bottom: 45%;
+                                right: -5.9vw;
+                                @media only screen and (min-width: 710px) and (max-width: 800px) {
+                                    right: -6.8vw;
+                                    bottom: 50%;
+                                }
+                                @media only screen and (min-width: 801px) and (max-width: 900px) {
+                                    right: -7.5vw;
+                                    bottom: 50%;
+                            }
+                        }
+                    }
+                }
+            /* Applying to all cards */
+            .w-label {
+                margin: 10px;
+                list-style-type: none;
+                flex-basis: 60%;
+                .academia {
+                        font-size: 20px;
+                }
+            }
+
+            }
+        }
+
+    }
+
+    @media only screen and (min-width: 901px) {
+        .w-history {
+            .line {
+                display: flex;
+                height: 430px;
+                .pole {
+                    width: 70vw;
+                    align-self: center;
+                }
+
+                .row {
+                    display: flex;
+                    flex-direction: column;
+                    /* First row */
+                    &:first-of-type {
+                        position: relative;
+                        /* Current job */
+                        .w-label:first-of-type {
+                            position: relative;
+                            align-self: center;
+                            bottom: -10px;
+                            right: 40px;
+                            min-width: 240px;
+                            max-width: min-content;
+                            text-align: right;
+                        }
+                        /* WW-GVC job */
+                        .w-label:last-of-type {
+                            position: relative;
+                            left: -80px;
+                            bottom: 20px;
+                            min-width: 240px;
+                            max-width: min-content;
+                            text-align: center;
+                            /* Inserting its bullet point */
+                            &::before {
+                                content: "";
+                                @include medium-bullet;
+                                bottom: 100px;
+                                top: -43px;
+                                left: 40%
+                            }
+                        }
+                        &::after {
+                            display: none;
+                        }
+                        /* Inserting the bullent point for the current job, relative to the row */ 
+                        &::before {
+                            content: "";
+                            @include medium-bullet;
+                            bottom: 49.5%;
+                            right: 50%;
+                        }
+                    }
+                    /* Second row */
+                    &:last-of-type {
+                        position: relative;
+                        right: 100px;
+                        /* Group leader card */
+                        .w-label:first-of-type {
+                            position: relative;
+                            align-self: flex-end;
+                            bottom: -25px;
+                            min-width: 250px;
+                            max-width: min-content;
+                            text-align: center;
+                            &::before {
+                                content: "";
+                                @include medium-bullet;
+                                bottom: -68px;
+                            }
+                        }
+                        /* NGO in Greece */ 
+                        .w-label:last-of-type {
+                            position: relative;
+                            width: max-content;
+                            width: 300px;
+                            bottom: 20px;
+                            left: -10px;
+                            &::before {
+                                content: "";
+                                @include medium-bullet;
+                                top: -42px;
+                            }
+                        }    
+                    }
+                    
+                    .w-label {
+                        display: inline-block;
+                        .academia {
+                            font-size: 20px;
+                        }    
+                    }
+                }
+            }
+        }
+    }
+}
