@@ -20,34 +20,44 @@ body {
                 min-width: 30px;
                 max-width: 30px;
             }
-            a {
-                color: set-text-color($bg-body);
-                text-decoration: none; 
-                img {
-                    padding: 11px;
-                    width: 50px;
-                    height: 50px;
-                    background-color: darken($white-transparent, 20);
-                    border: 3px solid $text-black;
-                    border-radius: 50%;
+            ul {
+                /* my face icon, replacing home item on the homepage */
+                .homepg-me-icon {
+                    .nav-bar_svg {
+                        display: block;
+                        margin: auto;
+                        position: relative;
+                        
+                        width: 51px;
+                        height: 51px;
+                        border: 3px solid $text-black;
+                        border-radius: 50%;
+                        background-color: $white-transparent;
+                        -webkit-backdrop-filter: blur(1px);
+                        cursor: default;
+                    }
                 }
-                /* contact me pic */
-            .nav-bar_svg {
-                width: 50px;
-                border: 3px solid $text-black;
-                border-radius: 50%;
-                background-color: $white-transparent;
-                -webkit-backdrop-filter: blur(1px);
-            }
-            }
-            a:hover {
-                background-color: lighten($beige, 5);
+                .sandwich_icon_menu {
+                    color: set-text-color($bg-body);
+                    text-decoration: none; 
+                    img {
+                        padding: 11px;
+                        width: 50px;
+                        height: 50px;
+                        background-color: darken($white-transparent, 20);
+                        border: 3px solid $text-black;
+                        border-radius: 50%;
+                    }
+                }
+                .sandwich_icon_menu:hover {
+                    background-color: lighten($beige, 5);
+                }
+
             }
         }
     }
     /* whatever goes on the right side of the nav-bar */
     .nav-bar_right {
-        white-space: nowrap;
         color: darken($beige, 20);
         height: fit-content;
         /* any other page: contact me button */
@@ -57,8 +67,8 @@ body {
             cursor: pointer;
             img {
                 padding: 11px;
-                width: 52px;
-                height: 52px;
+                width: 50px;
+                height: 50px;
                 background-color: darken($white-transparent, 20);
                 border: 3px solid $text-black;
                 border-radius: 50%;
@@ -180,26 +190,41 @@ body {
                 }
             }    
         }
-        /* Positioning of the home button on smaller screens */
-        @media only screen and (max-width: 660px) {
+        /* Positioning of the contact-me button on smaller screens */
+        @media only screen and (max-width: 470px) {
+            .nav-bar_right {
+                position: fixed;
+                left: 80vw;
+                top: 5px;
+                .nav-bar_right-logo:hover {
+                    top: 12px;
+                    h3 {
+                        left: -15vw;
+                        background-color: lighten($black, 5);
+                        border-radius: 25px;
+                        padding: 0.2rem 1rem;
+                        color: $text-white;
+                        white-space: wrap;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (min-width: 471px) and (max-width: 660px) {
             .nav-bar_right {
                 position: fixed;
                 left: 85vw;
                 .nav-bar_right-logo:hover {
+                    top: 8px;
                     h3 {
-                        bottom: 10%;
-                        right: 5%;
+                        left: -11vw;
                         background-color: lighten($black, 5);
                         border-radius: 25px;
                         padding: 0.5rem;
                         color: $text-white;
+                        white-space: nowrap;
                     }
-                }
-            }
-
-            @media only screen and (max-width: 470px) {
-                .nav-bar_right {
-                    left: 80vw;
                 }
             }
         }
@@ -216,8 +241,9 @@ body {
                 }
                 .nav-bar_right-logo:hover {
                     h3 {
-                        right: 25%;
+                        left: -53px;
                         height: fit-content;
+                        white-space: nowrap;
                     }
                 }
             }
@@ -238,7 +264,6 @@ body {
                     flex-basis: 100%;
                     .a, .b, .c {
                         flex-basis: 30%;
-                        
                         img {
                             display: block;
                             margin: auto;
@@ -249,6 +274,9 @@ body {
                             visibility: collapse;
                             color: transparent;
                             
+                        }
+                        .nav-bar_svg {
+                            top: 24%;
                         }
                     }
                 }
@@ -285,6 +313,7 @@ body {
             .nav-bar_right-logo:hover {
                 h3 {
                     height: fit-content;
+                    white-space: nowrap;
                 }
             }
         }

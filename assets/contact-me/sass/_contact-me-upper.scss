@@ -1,13 +1,11 @@
 body {
     height: 100%;
     .nav-bar {
-        .sandwich {
-            ul {
-                .c {
-                    img {
-                        background-image: radial-gradient($text-white, $pale-yellow);
-                        border: $yellow;
-                    }
+        .nav-bar_right {
+            .nav-bar_right-logo {
+                img {
+                    background-image: radial-gradient($text-white, $pale-yellow);
+                    border: $yellow;
                 }
             }
         }
