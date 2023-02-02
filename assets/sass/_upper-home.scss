@@ -1,6 +1,6 @@
 /* This is the homepage */
 
-.main { /* background + text */
+.header { /* background + text */
 
     /* background image */
     .bg-home {
@@ -20,12 +20,6 @@
     
     /* text displayed on background */
     .bg-text {
-        /*&::before {
-            @include bg-text;
-            border-radius: 25px;
-            background-color: $text-black;
-            opacity: 0.9;
-        }
         /* find the @mixin in the setup */
         @include window;
         background-color: $text-black;

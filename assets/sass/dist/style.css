@@ -46,7 +46,7 @@ strong {
     border-radius: 50%;
     padding: 11px;
   }
-  body .nav-bar .upper-title {
+  body .nav-bar .nav-bar_right {
     display: none;
   }
   body .break {
@@ -106,10 +106,10 @@ strong {
 .nav-bar .sandwich {
   display: flex;
 }
-.nav-bar .sandwich .sandwich-logo {
+.nav-bar .sandwich .sandwich--logo {
   width: 30px;
 }
-.nav-bar .upper-title {
+.nav-bar .nav-bar_right {
   white-space: nowrap;
 }
 @media only screen and (max-width: 880px) {
@@ -138,7 +138,7 @@ strong {
   .nav-bar .sandwich {
     flex-basis: 50%;
   }
-  .nav-bar .sandwich .sandwich-logo {
+  .nav-bar .sandwich .sandwich--logo {
     display: none;
   }
   .nav-bar .sandwich ul {

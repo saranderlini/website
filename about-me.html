@@ -3,49 +3,53 @@
     <meta charset="utf-8">
     <head>
         <title>About me</title>
-        <meta name="viewport" width="content-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="../img/circle-sara.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/about-me/css/style.css">
+        <link rel="icon" href="assets/img/circle-sara.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?400&family=Righteous&display=swap">
-        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     </head>
     <body id="top-about-me-page">
         <!-- Navigation bar -->
         <nav class="nav-bar">
                 <div class="sandwich">
-                    <img class="sandwich-logo" 
-                    src="../img/menu-svgrepo-com.svg" alt="menu sidebar">
+                    <img class="sandwich--logo" 
+                    src="assets/img/menu-svgrepo-com.svg" alt="menu sidebar">
                     <ul>
-                        <li class="a"><a class="ufo-menu" href="../about-me/index.html"><img src="../img/activity.svg" alt="About Me">
-                            <h3>About Me</h3></a>
-                        </li>
-
-                        <li class="b"><a class="ufo-menu" href="../contact-me/index.html"><img src="../img/contact.svg" alt="Contact Me">
-                            <h3>Contact Me</h3></a>
+                        <li class="a">
+                            <a class="sandwich_icon_menu" href="index.html"><img src="assets/img/home-about-me.svg" alt="Homepage">
+                                <h3 class="home">Home</h3></a>
                         </li>
                             
-                        <li class="c"><a class="ufo-menu" href="../portfolio/index.html"><img src="../img/portfolio.svg" alt="Portfolio">
-                            <h3>Portfolio</h3></a>
+                        <li class="b">
+                            <a class="sandwich_icon_menu" href="about-me.html"><img src="assets/img/activity.svg" alt="About Me">
+                                <h3>About Me</h3></a>
+                        </li>
+
+                        <li class="c">
+                            <a class="sandwich_icon_menu" href="portfolio.html"><img src="assets/img/portfolio.svg" alt="Portfolio">
+                                <h3>Portfolio</h3></a>
                         </li>
                     </ul>
                 </div>
-            <div class="upper-title">
-                <div class="right-logo"><a href="../../index.html"><img src="../img/home-about-me.svg" alt="Homepage">
-                    <h3 class="home">Home</h3></a>
+            <div class="nav-bar_right">
+                <div class="nav-bar_right-logo">
+                    <a class="sandwich_icon_menu" href="contact-me.html"><img src="assets/img/contact.svg" alt="Contact Me">
+                        <h3>Contact Me</h3></a>
                 </div>
         </nav>
         <div class="bg-about-me-home">
         <article>
-            <div class="brief second-type p-2">
-                <h1 class="title"><img class="mx-1" src="../img/me.svg" alt="About me icon"> In brief</h1>
+            <div class="brief article-section--ext p-2">
+                <h1 class="title"><img class="mx-1" src="assets/img/me.svg" alt="About me icon"> In brief</h1>
                 <p class="p-2">
                     I graduated from the Università di Bologna with a Master in International Affairs, where I concentrated my studies on security issues and crisis management operations. Over the last few years, I have worked in both
                     for-profit and non-profit sectors, and in the international development realm, in Italy and abroad. As my interest for International and Humanitarian Affairs is still present and solid, I am intended on coupling it with the one for Web Development. <br> 
                     I have gained excellent interpersonal, listening and comprehension skills, and work very effectively in collaborative, team and autonomous environments.
                 </p>
             </div>
-                <section class="second-type p-2">
-                    <h1 class="chapter-tag"><img class="mx-1" src="../../assets/img/education.svg" alt="Education icon">
+                <section class="article-section--ext p-2">
+                    <h1 class="chapter-tag"><img class="mx-1" src="assets/img/education.svg" alt="Education icon">
                         <span>Education</span></h1>
                     <div class="line py-1 my-2">
                         <div class="pole mx-1"></div>
@@ -77,7 +81,7 @@
                 <!-- Section about work history -->
                 <div class="outer">
                 <section class="w-history p-2">
-                    <h1 class="w-title"><img class="mx-1" src="../../assets/img/hammer.svg" alt="Work icon">
+                    <h1 class="w-title"><img class="mx-1" src="assets/img/hammer.svg" alt="Work icon">
                         <span>Work</span></h1>
                     <div class="line py-1 my-2">
                         <div class="pole mx-1"></div>
@@ -101,7 +105,7 @@
                     </div>
                 </section>
                 <section class="skills p-2">
-                    <h1 class="skills-title mx-1"><img class="mx-1" src="../../assets/img/star.svg" alt="Skills icon">
+                    <h1 class="skills-title mx-1"><img class="mx-1" src="assets/img/star.svg" alt="Skills icon">
                     <span>Skills</span></h1> 
                         <!-- Div for the whole ability section -->
                     <div class="ability">
@@ -109,8 +113,7 @@
                         <ul class="languages">
                             <li class="my-1 px-1 italian">
                                 <h3>Italian</h3>
-                                <span>Mother tongue <i class="fa fa-certificate fa-rotate-180"></i>
-                                </span>
+                                <span>Mother tongue</span>
                             </li>
                             <li class="my-1 px-1 english">
                                 <h3>English</h3>
@@ -119,12 +122,12 @@
                             </li>
                             <li class="my-1 px-1 spanish">
                                 <h3>Spanish</h3>
-                                <span>B1 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+                                <span>B1 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>
                                 </span>
                             </li>
                             <li class="my-1 px-1 french">
                                 <h3>French</h3>
-                                <span>A2 <i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+                                <span>A2 <i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>
                                 </span>
                             </li>
                         </ul>
@@ -134,41 +137,41 @@
                         <div class="hard">
                             <h2 class="hard-title py-1">Hard Skills</h2>
                             <div class="web-d py-1">
-                                <img class="check-mark" src="../img/check-mark.svg" alt="chech mark">
+                                <img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark">
                                 <div class="web-d-items px-1">
-                                    <span class="hard-item my-1"><i class="fa fa-html5" aria-hidden="true"></i><h3>HTML-5</h3></span><br>
-                                    <span class="hard-item my-1"><i class="fa fa-css3" aria-hidden="true"></i><h3>CSS</h3> and its preprocessor, <h3>Sass</h3></span><br>
-                                    <span class="hard-item my-1"><i class=" fa fa-terminal fa-lg" aria-hidden="true"></i><h3>Bootstrap</h3></span>    
+                                    <span class="hard-item my-1"><i class="fa fa-html5" aria-hidden="true"></i>HTML-5</span><br>
+                                    <span class="hard-item my-1"><i class="fa fa-css3" aria-hidden="true"></i>CSS and its preprocessor, Sass</span><br>
+                                    <span class="hard-item my-1"><i class=" fa fa-terminal fa-lg" aria-hidden="true"></i>Bootstrap</span>    
                                 </div>
                             </div>
                             <div class="h-s-label">
-                                <img class="check-mark" src="../img/check-mark.svg" alt="chech mark">
-                                <span class="hard-item px-1"><i class="fa fa-laptop" aria-hidden="true"></i><h4>Windows Office</h4> and <h4>Apple Office</h4> packages</span>
+                                <img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark">
+                                <span class="hard-item px-1"><i class="fa fa-laptop" aria-hidden="true"></i>Windows Office and Apple Office packages</span>
                             </div>
                             <div class="h-s-label">
-                                <img class="check-mark" src="../img/check-mark.svg" alt="chech mark">
-                                <span class="hard-item px-1"><i class="fa fa-cloud" aria-hidden="true"></i>Shared repository document collaboration <h4>Outlook, iCloud, Google Drive, etc</h4> </span>
+                                <img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark">
+                                <span class="hard-item px-1"><i class="fa fa-cloud" aria-hidden="true"></i>Shared repository document collaboration - e.g., Outlook, iCloud, Google Drive, etc</span>
                             </div>
                             <div class="h-s-label">
-                                <img class="check-mark" src="../img/check-mark.svg" alt="chech mark">
-                                <span class="hard-item px-1"><i class="fa fa-users" aria-hidden="true"></i>Virtual meeting platforms <h4>Teams, Zoom, Google meetings, hangouts, Skype, etc</h4></span>
+                                <img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark">
+                                <span class="hard-item px-1"><i class="fa fa-users" aria-hidden="true"></i>Virtual meeting platforms - e.g., Teams, Zoom, Google meetings, hangouts, Skype, etc</span>
                             </div>
                             <div class="h-s-label">
-                                <img class="check-mark" src="../img/check-mark.svg" alt="chech mark">
-                                <span class="hard-item px-1"><i class="fa fa-car" aria-hidden="true"></i><h4>Driving License - B</h4></span>
+                                <img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark">
+                                <span class="hard-item px-1"><i class="fa fa-car" aria-hidden="true"></i>Driving License - B</span>
                             </div>
                         </div>
                         <!-- This is a div for the soft skills -->
                         <div class="soft">
                             <h2 class="soft-title py-1">Soft Skills</h2>
                             <ul class="s-s-label">
-                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i> Flexibility, versatility, accuracy, precision.</span><img class="check-mark" src="../img/check-mark-circle.svg" alt="chech mark"></li>
-                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Problem solving and critical thinking.</span><img class="check-mark" src="../img/check-mark-circle.svg" alt="chech mark"></li>
-                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Ability to work both in team, and indipendently.</span><img class="check-mark" src="../img/check-mark-circle.svg" alt="chech mark"></li>
-                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Strong inclination towards contact with people, and excellent relational skills.</span><img class="check-mark" src="../img/check-mark-circle.svg" alt="chech mark"></li>
-                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Empathy, lots.</span><img class="check-mark" src="../img/check-mark-circle.svg" alt="chech mark"></li>
-                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Strong ability to adapt to diverse cultural and social contexts.</span><img class="check-mark" src="../img/check-mark-circle.svg" alt="chech mark"></li>
-                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Great commitiment and self-determination.</span><img class="check-mark" src="../img/check-mark-circle.svg" alt="chech mark"></li>
+                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i> Flexibility, versatility, accuracy, precision.</span><img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark"></li>
+                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Problem solving and critical thinking.</span><img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark"></li>
+                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Ability to work both in team, and indipendently.</span><img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark"></li>
+                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Strong inclination towards contact with people, and excellent relational skills.</span><img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark"></li>
+                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Empathy, lots.</span><img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark"></li>
+                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Strong ability to adapt to diverse cultural and social contexts.</span><img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark"></li>
+                                <li><span class="soft-item px-1"><i class="fa fa-asterisk" aria-hidden="true"></i>Great commitiment and self-determination.</span><img class="check-mark" src="assets/img/check-mark-circle.svg" alt="chech mark"></li>
                             </ul>
                         </div>
                         </div>
@@ -178,7 +181,7 @@
             </article>
         </div>
         <footer class="footer my-1">
-            <a class="to-top-page px-1" href="#top-about-me-page"><img src="../img/upward.svg" alt="Back to top icon"></a>
+            <a class="to-top-page px-1" href="#top-about-me-page"><img src="assets/img/upward.svg" alt="Back to top icon"></a>
         </footer>
         </body>
         </html>

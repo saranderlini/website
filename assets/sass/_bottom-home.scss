@@ -2,11 +2,11 @@
     @include divider;
 }
 
-.introduction {    
+.article {    
     line-height: 35px;
     box-shadow: 10px 0 15px darken($beige, 4), -10px 0 15px darken($beige, 4);
     padding: 2rem 0 0.5rem;
-    .presentation {
+    .article-section {
         background-color: lighten($white-transparent, 3);
         padding: 2rem 2rem;
         box-shadow: 10px 0 12px rgb(92 94 95 / 67%), -10px 0 12px rgb(92 94 95 / 67%);
@@ -40,7 +40,7 @@
     section {
         margin-top: 5vh;
 
-        .presentation {
+        .article-section {
             background-color: lighten($white-transparent, 3);
             .title {
                 @include window;

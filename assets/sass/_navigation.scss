@@ -16,7 +16,7 @@ body {
             display: flex;
             cursor: pointer;
             
-            .sandwich-logo {
+            .sandwich--logo {
                 min-width: 30px;
                 max-width: 30px;
             }
@@ -31,6 +31,14 @@ body {
                     border: 3px solid $text-black;
                     border-radius: 50%;
                 }
+                /* contact me pic */
+            .nav-bar_svg {
+                width: 50px;
+                border: 3px solid $text-black;
+                border-radius: 50%;
+                background-color: $white-transparent;
+                -webkit-backdrop-filter: blur(1px);
+            }
             }
             a:hover {
                 background-color: lighten($beige, 5);
@@ -38,20 +46,12 @@ body {
         }
     }
     /* whatever goes on the right side of the nav-bar */
-    .upper-title {
+    .nav-bar_right {
         white-space: nowrap;
         color: darken($beige, 20);
         height: fit-content;
-        /* homepage pic */
-        .navigation-right-pic {
-            width: 50px;
-            border: 3px solid $text-black;
-            border-radius: 50%;
-            background-color: $white-transparent;
-            -webkit-backdrop-filter: blur(1px);
-        }
-        /* any other page:home button */
-        .right-logo {
+        /* any other page: contact me button */
+        .nav-bar_right-logo {
             position: relative;
             width: 60px;
             cursor: pointer;
@@ -68,10 +68,11 @@ body {
                 color: transparent;
                 position: absolute;
                 bottom: 25%;
+                left: -50%;
             }
         }
-        /* hovering on home logo */ 
-        .right-logo:hover {
+        /* hovering on contact me logo */ 
+        .nav-bar_right-logo:hover {
             img {
                 visibility: collapse;
             }
@@ -129,7 +130,7 @@ body {
                     position: relative;
                     width: fit-content;
 
-                    .ufo-menu {
+                    .sandwich_icon_menu {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
@@ -181,10 +182,10 @@ body {
         }
         /* Positioning of the home button on smaller screens */
         @media only screen and (max-width: 660px) {
-            .upper-title {
+            .nav-bar_right {
                 position: fixed;
                 left: 85vw;
-                .right-logo:hover {
+                .nav-bar_right-logo:hover {
                     h3 {
                         bottom: 10%;
                         right: 5%;
@@ -197,23 +198,23 @@ body {
             }
 
             @media only screen and (max-width: 470px) {
-                .upper-title {
+                .nav-bar_right {
                     left: 80vw;
                 }
             }
         }
         @media only screen and (min-width: 661px) and (max-width: 900px) {
-            .upper-title {
+            .nav-bar_right {
                 position: fixed;
                 left: 90vw;
                 padding-top: 5px;
-                .right-logo {
+                .nav-bar_right-logo {
                     img {
                         width: 45px;
                         height: 45px;
                     }    
                 }
-                .right-logo:hover {
+                .nav-bar_right-logo:hover {
                     h3 {
                         right: 25%;
                         height: fit-content;
@@ -226,7 +227,7 @@ body {
     @media only screen and (min-width: 901px) {
             .sandwich {
                 flex-basis: 50%;
-                .sandwich-logo {
+                .sandwich--logo {
                     display: none;
                 }
     
@@ -273,7 +274,7 @@ body {
                     }
                 }
             }
-        .upper-title {
+        .nav-bar_right {
             display: flex;
             padding: 10px;
             position: relative;
@@ -281,7 +282,7 @@ body {
             right: 30px;
             height: 100%;
             align-items: baseline;
-            .right-logo:hover {
+            .nav-bar_right-logo:hover {
                 h3 {
                     height: fit-content;
                 }

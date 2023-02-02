@@ -6,39 +6,47 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?400&family=Righteous&display=swap">
         <link rel="icon" href="assets/img/circle-sara.png">
-        <meta content="viewport" width="content-width, initial-scale=1.0">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body id="top">
         <nav class="nav-bar">
             <div class="sandwich">
-             <img class="sandwich-logo" 
+             <img class="sandwich--logo" 
                 src="assets/img/menu-svgrepo-com.svg" alt="menu sidebar">
                 <ul>
-                    <li class="a"><a class="ufo-menu" href="assets/about-me/index.html"><img src="assets/img/activity.svg" alt="About Me">
-                    <h3>About me</h3></a>
+                    <li class="a">
+                        <svg viewBox="0 0 10 10"
+                        class="nav-bar_svg">
+                            <mask id="myNavMask">
+                                <circle id="myNavCircle" cx="50%" cy="50%" r="100%" stroke-width="2%" fill="white" opacity="1"/>
+                            </mask>
+                            <image id="myNavPic" href="assets/img/close-up.png" width="100%" mask="url(#myContactMask)"></image>
+                        </svg>        
+                        <a class="sandwich_icon_menu" href="index.html"><img src="assets/img/home-about-me.svg" alt="Homepage">
+                            <h3 class="home">Home</h3>
+                        </a>
                     </li>
-                    
-                    <li class="b"><a class="ufo-menu" href="assets/contact-me/index.html"><img src="assets/img/contact.svg" alt="Contact Me">
-                    <h3>Contact Me</h3></a>
+
+                    <li class="b">
+                        <a class="sandwich_icon_menu" href="about-me.html"><img src="assets/img/activity.svg" alt="About Me">
+                            <h3>About Me</h3></a>
                     </li>
-                    
-                    <li class="c"><a class="ufo-menu" href="assets/portfolio/index.html"><img src="assets/img/portfolio.svg" alt="Portfolio">
-                    <h3>Portfolio</h3></a>
+
+                    <li class="c">
+                        <a class="sandwich_icon_menu" href="portfolio.html"><img src="assets/img/portfolio.svg" alt="Portfolio">
+                            <h3>Portfolio</h3></a>
                     </li>
                 </ul>
             </div>
-            <div class="upper-title">
-                <svg viewBox="0 0 10 10"
-                class="navigation-right-pic">
-                    <mask id="myNavMask">
-                        <circle id="myNavCircle" cx="50%" cy="50%" r="100%" stroke-width="2%" fill="white" opacity="1"/>
-                    </mask>
-                    <image id="myNavPic" href="assets/img/close-up.png" width="100%" mask="url(#myContactMask)"></image>
-                </svg>
+            <div class="nav-bar_right">
+                <div class="nav-bar_right-logo">
+                    <a class="sandwich_icon_menu" href="contact-me.html"><img src="assets/img/contact.svg" alt="Contact Me">
+                        <h3>Contact Me</h3>
+                    </a>
+                </div>
             </div>
         </nav>
-        <header class="main">
+        <header class="header">
         <div class="bg-home">
             <div class="bg-text">
                 <strong>Hey, I'm</strong> <br> 
@@ -49,8 +57,8 @@
     
 
     <!--section below the header and background pic--> 
-        <article class="introduction">
-            <div class="presentation">
+        <article class="article">
+            <div class="article-section">
                 <h1 class="title px-3">
                     <svg class="profilepic mx-1">
                         <mask id="myMask">
@@ -71,7 +79,7 @@
             </div>
 
                 <section>                         
-                <div class="presentation">
+                <div class="article-section">
                     <h2 class="title">
                         <svg class="profilepic mx-1">
                                                     

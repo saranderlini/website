@@ -105,7 +105,7 @@ a {
             margin: 5px;
             top: 10px;
         }    
-        .main {
+        .header {
             .bg-home {
                &::before {
                     background-image: url(../img/tall-pad.svg);
@@ -136,7 +136,7 @@ a {
             top: 10px;
         }
 
-        .main {
+        .header {
             .bg-home {
                 height: 100vh;
                &::before {
@@ -151,7 +151,7 @@ a {
                 }
             }
             }
-            .introduction {
+            .article {
                 p {
                     max-width: 90%;
                     margin: auto;
@@ -177,14 +177,14 @@ a {
             align-self: center;
             align-items: center;
             
-            .upper-title {
+            .nav-bar_right {
                 h3 {
                     top: 20px;
                 }
             }
         }
 
-        .main {
+        .header {
             .bg-home {
                 height: 80vh;
 
@@ -200,7 +200,7 @@ a {
             }
         }
         }
-        .introduction {
+        .article {
               max-width: 100%;
               .title {
                 min-width: 12vw;
@@ -224,7 +224,7 @@ a {
     body {
         font-size: $base-font-size;
         
-        .main {
+        .header {
             .bg-home {
                 &::before {
                     background-image: url(../img/colorful-pad.svg);
@@ -240,9 +240,9 @@ a {
                 }
             }
         }
-        .introduction {
+        .article {
             max-width: 100%;
-        .presentation {
+        .article-section {
             display: flex;
             flex-basis: 100%;
             justify-content: space-between;
