@@ -203,9 +203,11 @@ body {
             }
         }  
     }
+
     @media only screen and (max-width: 320px) {
+        height: 100%;
         .contact-header {
-            height: 160vh;
+            height: 170vh;
             &::before {
                 height: 120%;
                 background-image: url(../../img/bg-tall.svg);
@@ -218,8 +220,8 @@ body {
                     width: 180px;
                     height: 180px;
                     position: absolute;
-                    top: 40px;
-                    right: 40px;
+                    top: 50px;
+                    left: 25%;
                 }
                 .second-contact-pic {
                     display: none;
@@ -278,7 +280,161 @@ body {
         }
     }
 
-    @media only screen and (min-width: 321px) and (max-width: 479px) {
+    @media only screen and (min-width: 321px) and (max-width: 390px) and (max-height: 800px) {
+        .contact-header {
+            height: 160vh;
+            &::before {
+                height: 120%;
+                background-image: url(../../img/bg-tall.svg);
+            }
+            .contact-bg {
+                min-width: 100%;
+                max-width: 100%;
+
+                .sara-contact-pic {
+                    width: 220px;
+                    height: 220px;
+                    position: absolute;
+                    top: 50px;
+                    right: 60px;
+                }
+                .second-contact-pic {
+                    display: none;
+                }
+                .contact-box, .inquiry {
+                    min-width: min-content;
+                    max-width: min-content;
+                    margin: 30px auto;
+                    min-height: min-content;
+                    max-height: min-content;
+                }
+                .contact-box {
+                    position: relative;
+                    padding: 1rem;
+                    margin: 0 auto;
+                    top: 35vh;
+                    h1 {
+                        padding-top: 0;
+                        font-size: 20px;
+                        img {
+                            width: 40px;
+                            height: 40px;    
+                        }
+                    }
+                    .contact-list {
+                        padding: 0;
+                    }
+                }
+            
+                .inquiry {
+                    margin: 3rem auto 0;
+                    padding: 1rem;
+                    top: 35vh;
+                    h2 {
+                        padding: 0;
+                        padding-bottom: 1rem;
+                        font-size: 20px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                    .form-row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        label {
+                            width: 100%;
+                        }
+                        input[type=text],
+                        input[type=email],
+                        input[type=tel] {
+                            width: 80%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 321px) and (max-width: 390px) and (min-height: 801px) {
+        .contact-header {
+            height: 150vh;
+            &::before {
+                height: 120%;
+                background-image: url(../../img/bg-tall.svg);
+            }
+            .contact-bg {
+                min-width: 100%;
+                max-width: 100%;
+
+                .sara-contact-pic {
+                    width: 220px;
+                    height: 220px;
+                    position: absolute;
+                    top: 50px;
+                    right: 60px;
+                }
+                .second-contact-pic {
+                    display: none;
+                }
+                .contact-box, .inquiry {
+                    min-width: min-content;
+                    max-width: min-content;
+                    margin: 30px auto;
+                    min-height: min-content;
+                    max-height: min-content;
+                }
+                .contact-box {
+                    position: relative;
+                    padding: 1rem;
+                    margin: 0 auto;
+                    top: 30vh;
+                    h1 {
+                        padding-top: 0;
+                        font-size: 20px;
+                        img {
+                            width: 40px;
+                            height: 40px;    
+                        }
+                    }
+                    .contact-list {
+                        padding: 0;
+                    }
+                }
+            
+                .inquiry {
+                    margin: 3rem auto 0;
+                    padding: 1rem;
+                    top: 28vh;
+                    h2 {
+                        padding: 0;
+                        padding-bottom: 1rem;
+                        font-size: 20px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                    .form-row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        label {
+                            width: 100%;
+                        }
+                        input[type=text],
+                        input[type=email],
+                        input[type=tel] {
+                            width: 80%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 391px) and (max-width: 479px) and (max-height: 700px) {
         .contact-header {
             height: 160vh;
             &::before {
@@ -353,9 +509,85 @@ body {
         }
     }
 
-    @media only screen and (min-width: 480px) and (max-width: 660px) {
+    @media only screen and (min-width: 391px) and (max-width: 479px) and (min-height: 701px) {
         .contact-header {
-            height: 150vh;
+            height: 145vh;
+            &::before {
+                height: 120%;
+                background-image: url(../../img/bg-tall.svg);
+            }
+            .contact-bg {
+                min-width: 100%;
+                max-width: 100%;
+
+                .sara-contact-pic {
+                    width: 220px;
+                    height: 220px;
+                    position: absolute;
+                    top: 50px;
+                    left: 20vw;
+                }
+                .second-contact-pic {
+                    display: none;
+                }
+                .contact-box, .inquiry {
+                    min-width: min-content;
+                    max-width: min-content;
+                    margin: 30px auto;
+                    min-height: min-content;
+                    max-height: min-content;
+                }
+                .contact-box {
+                    padding: 1rem;
+                    margin: 0 auto;
+                    top: 30vh;
+                    h1 {
+                        padding-top: 0;
+                        font-size: 20px;
+                        img {
+                            width: 40px;
+                            height: 40px;    
+                        }
+                    }
+                    .contact-list {
+                        padding: 0;
+                    }
+                }
+            
+                .inquiry {
+                    margin: 3rem auto 0;
+                    padding: 1rem;
+                    top: 30vh;
+                    h2 {
+                        padding: 0;
+                        padding-bottom: 1rem;
+                        font-size: 20px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                    .form-row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        label {
+                            width: 100%;
+                        }
+                        input[type=text],
+                        input[type=email],
+                        input[type=tel] {
+                            width: 80%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 660px) and (max-height: 730px) {
+        .contact-header {
+            height: 165vh;
             &::before {
                 height: 120%;
                 background-image: url(../../img/bg-tall.svg);
@@ -405,11 +637,13 @@ body {
             }
         }
     }
-    @media only screen and (min-width: 661px) and (max-width: 900px) {
+
+
+    @media only screen and (min-width: 480px) and (max-width: 660px) and (min-height: 730px) {
         .contact-header {
-            height: 150vh;
+            height: wrap;
             &::before {
-                height: 120%;
+                height: 100%;
                 background-image: url(../../img/bg-tall.svg);
             }
             .contact-bg {
@@ -420,7 +654,7 @@ body {
                     width: 250px;
                     height: 250px;
                     position: absolute;
-                    top: 90px;
+                    top: 40px;
                     right: 60px;
                 }
                 .second-contact-pic {
@@ -434,8 +668,6 @@ body {
                     max-height: min-content;
                 }
                 .contact-box {
-                    bottom: 40px;
-                    right: 100px;
                     h1 {
                         padding-top: 0;
                     }
@@ -459,8 +691,224 @@ body {
             }
         }
     }
+    
+    @media only screen and (min-width: 661px) and (max-width: 900px) and (max-height: 699px) {
+        .contact-header {
+            &::before {
+                height: 130%;
+                background-image: url(../../img/bg-tall.svg);
+            }
+            .contact-bg {
+                min-width: 100%;
+                max-width: 100%;
 
-    @media only screen and (min-width: 901px) and (max-width: 1199px) {
+                .sara-contact-pic {
+                    width: 250px;
+                    height: 250px;
+                    position: absolute;
+                    top: 110px;
+                    right: 40px;
+                }
+                .second-contact-pic {
+                    display: none;
+                }
+                .contact-box, .inquiry {
+                    min-width: min-content;
+                    max-width: min-content;
+                    margin: 30px auto;
+                    min-height: min-content;
+                    max-height: min-content;
+                }
+                .contact-box {
+                    top: 60px;
+                    right: 130px;
+                    h1 {
+                        padding-top: 0;
+                    }
+                }
+                .inquiry {
+                    top: 10vh;
+                    .form-row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        label {
+                            width: 100%;
+                        }
+                        input[type=text],
+                        input[type=email],
+                        input[type=tel] {
+                            width: 80%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 661px) and (max-width: 900px) and (min-height: 700px) and (max-height: 1100px) {
+        .contact-header {
+            height: wrap;
+            &::before {
+                height: 100%;
+                background-image: url(../../img/bg-tall.svg);
+            }
+            .contact-bg {
+                min-width: 100%;
+                max-width: 100%;
+
+                .sara-contact-pic {
+                    width: 250px;
+                    height: 250px;
+                    position: absolute;
+                    top: 110px;
+                    right: 40px;
+                }
+                .second-contact-pic {
+                    display: none;
+                }
+                .contact-box, .inquiry {
+                    min-width: min-content;
+                    max-width: min-content;
+                    margin: 30px auto;
+                    min-height: min-content;
+                    max-height: min-content;
+                }
+                .contact-box {
+                    top: 60px;
+                    right: 130px;
+                    h1 {
+                        padding-top: 0;
+                    }
+                }
+                .inquiry {
+                    top: 10vh;
+                    .form-row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        label {
+                            width: 100%;
+                        }
+                        input[type=text],
+                        input[type=email],
+                        input[type=tel] {
+                            width: 80%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 661px) and (max-width: 900px) and (min-height: 1101px) {
+        .contact-header {
+            height: wrap;
+            .contact-bg {
+                .sara-contact-pic {
+                    position: relative;
+                    top: 10vh;
+                    left: 40vw;
+                }
+                .contact-box {
+                    position: relative;
+                    top: -19vh;
+                    right: 18vw;
+                }
+                .inquiry {
+                    position: relative;
+                    top: -20vh
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 901px) and (max-width: 1199px) and (max-height: 700px) {
+        .contact-header {
+            height: 165vh;
+            .contact-bg {
+                width: 90%;
+                .sara-contact-pic {
+                    position: absolute;
+                    right: 60px;
+                    top: 149px;
+                }
+                .second-contact-pic {
+                    visibility: hidden;
+                    position: relative;
+                    width: 250px;
+                    height: 250px;
+                    bottom: -420px;
+                    left: 20px;
+                }
+                .contact-box {
+                    min-width: fit-content;
+                    max-width: min-content;
+                    margin: 0 10px;
+                    min-height: min-content;
+                    max-height: min-content;
+                    top: 130px;
+                    h1 {
+                        padding-top: 0;
+                    }
+                    li {
+                        line-height: 1.8rem;
+                    }
+                }
+                .inquiry {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    position: absolute;
+                    padding: inherit 3rem;
+                    margin: auto;
+                    top: 80vh;
+                    left: 10%;
+                    justify-content: center;
+                    flex-basis: content;
+                    width: 80%;
+                    h2 {
+                        margin: auto;
+                        flex-basis: 100%;
+                    }
+                    form {
+                        display: flex;
+                        height: 65vh;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        .form-row {
+                            margin-top: 1rem;
+                            width: 45%;
+                            &:last-of-type {
+                                order: 1;
+                                input[type=email] {
+                                    margin-top: 0;
+                                }
+                            }
+                            label {
+                                width: fit-content;
+                                .phone {
+                                    font-size: calc(20px - 0.3rem);
+                                }
+                            }
+                            input[type=text],
+                            input[type=email],
+                            input[type=tel] {
+                                width: 90%;
+                            }
+                        }
+                        .button {
+                            width: 22vw;
+                            order: 2;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 901px) and (max-width: 1199px) and (min-height: 701px) and (max-height: 1200px) {
         .contact-header {
             height: 145vh;
             .contact-bg {
@@ -564,9 +1012,110 @@ body {
         }
     }
 
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 901px) and (max-width: 1199px) and (min-height: 1201px) {
+        .contact-header {
+            height: wrap;
+            .contact-bg {
+                .sara-contact-pic {
+                    position: relative;
+                    top: 8vh;
+                    left: 40vw;
+                }
+                .contact-box {
+                    position: relative;
+                    top: -10vh;
+                    right: 18vw;
+                }
+                .inquiry {
+                    position: relative;
+                    top: -10vh
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1200px) and (max-height: 799px) {
         .contact-header {
             height: 100vh;
+            .contact-bg {
+                height: fit-content;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                top: -8vh;
+                .sara-contact-pic {
+                    width: 250px;
+                    height: auto;
+                    position: absolute;
+                    top: 170px;
+                    left: 350px;
+                }
+                .second-contact-pic {
+                    width: 180px;
+                    height: auto;
+                    position: absolute;
+                    bottom: -300px;
+                    left: 50px;
+                    display: none;
+                }
+                .contact-box {
+                    flex-basis: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    margin: 0 1.5rem;
+                    z-index: 1;
+                    .contact-list {
+                        line-height: 2.4rem;
+                        li {
+                            align-items: center;
+                            i {
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                .inquiry {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    flex-basis: 50%;
+                    top: 180px;
+                    h2 {
+                        text-align: center;
+                    }
+                    form {
+                        margin-top: 2rem;
+                        .form-row {
+                            flex-wrap: wrap;
+                            flex-direction: row;
+                            justify-content: space-around;
+                            label {
+                                flex-basis: 35%;
+                            }
+                            input {
+                                flex-basis: 65%;
+                            }
+                            
+                            textarea {
+                                width: 70%;
+                                margin: auto;
+                                overflow-y: scroll;
+                            }
+                        }
+                        .button {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1200px) and (min-height: 801px) {
+        .contact-header {
+            height: 100%;
             .contact-bg {
                 height: fit-content;
                 width: 100%;
@@ -581,14 +1130,6 @@ body {
                     position: absolute;
                     top: 170px;
                     left: 300px;
-                }
-                .second-contact-pic {
-                    width: 180px;
-                    height: auto;
-                    position: absolute;
-                    bottom: -300px;
-                    left: 50px;
-                    display: none;
                 }
                 .contact-box {
                     flex-basis: 30%;
