@@ -87,10 +87,14 @@ a {
     &:link {
         color: $black;
     }
-    &:hover {
-        color: darken($beige, 30)
+    @media (hover:hover) {
+        &:hover {
+            color: darken($beige, 30)
+        }
     }
 }
+
+
 /* Responsive setup for main page (not other pages) */
 /* for iPhones (max-width: 479px) + smaller screens */
 @media only screen and (max-width: 479px) {

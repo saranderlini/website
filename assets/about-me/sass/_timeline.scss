@@ -154,6 +154,7 @@ body {
                     }
                 }
             }
+            @media (hover:hover) and (pointer: any-pointer) {
                 .card:hover {
                     .academia {
                         display: none;
@@ -162,12 +163,11 @@ body {
                         display: block;
                         align-self: center;
                         padding: 5px;
-                    }
-                    
+                    } 
                 }
-                
-            }
+            }    
         }
+    }
     
     @media only screen and (min-width: 901px) {
         $height: 500px;

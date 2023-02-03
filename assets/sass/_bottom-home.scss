@@ -17,20 +17,21 @@
         .profilepic {
             @include profile-picture;
         }
-
-        .profilepic:hover {
-            width: 100px;
-            height: 100px;
-            #myMask {
-                #myCircle {
-                    stroke-width: 5px;
-                    @include maskhover;
+        @media (hover:hover) {
+            .profilepic:hover {
+                width: 100px;
+                height: 100px;
+                #myMask {
+                    #myCircle {
+                        stroke-width: 5px;
+                        @include maskhover;
+                    }
                 }
-            }
-            #myPic {
-                @include profpichover;
-                src: url(/assets/img/sara-cropped.png);
-                transform: scale(2.5);
+                #myPic {
+                    @include profpichover;
+                    src: url(/assets/img/sara-cropped.png);
+                    transform: scale(2.5);
+                }
             }
         }
         }
@@ -58,15 +59,16 @@
                         display: none;
                     }
                 }
-                
-                .profilepic:hover {
-                    border-color: lighten($salmon, 5);
-                    
-                    #myVisionPic {
-                        display: none;
-                    }
-                    #myVisionPicHover {
-                        display: inline-block;
+                @media (hover:hover) {
+                    .profilepic:hover {
+                        border-color: lighten($salmon, 5);
+                        
+                        #myVisionPic {
+                            display: none;
+                        }
+                        #myVisionPicHover {
+                            display: inline-block;
+                        }
                     }
                 }
             }

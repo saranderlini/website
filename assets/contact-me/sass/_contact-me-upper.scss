@@ -44,9 +44,11 @@ body {
                 #myContactPic {
                     width: 85%;
                 }
-                #myContactPic:hover {
-                    transition: width 0.4s ease-in;
-                    width: 100%;
+                @media (hover:hover) {
+                    #myContactPic:hover {
+                        transition: width 0.4s ease-in;
+                        width: 100%;
+                    }
                 }
             }
 
@@ -193,12 +195,14 @@ body {
                     padding-bottom: 10px;
                     width: 60%;
                 }
-                .button:hover,
-                .button:active {
-                    color: darken($text-black, 0.8);
-                    background-color: transparentize($pale-yellow, 0.8);
-                    border-color: $yellow;
-                    box-shadow: 5px 5px 10px $text-white, -5px -5px 10px $text-white;
+                @media (hover:hover) {
+                    .button:hover,
+                    .button:active {
+                        color: darken($text-black, 0.8);
+                        background-color: transparentize($pale-yellow, 0.8);
+                        border-color: $yellow;
+                        box-shadow: 5px 5px 10px $text-white, -5px -5px 10px $text-white;
+                    }
                 }
             }
         }  
