@@ -1018,21 +1018,52 @@ body {
 
     @media only screen and (min-width: 901px) and (max-width: 1199px) and (min-height: 1201px) {
         .contact-header {
-            height: wrap;
+            height: 110vh;
             .contact-bg {
+                height: min-content;
                 .sara-contact-pic {
                     position: relative;
                     top: 8vh;
-                    left: 40vw;
+                    left: -3vw;
                 }
                 .contact-box {
                     position: relative;
-                    top: -10vh;
-                    right: 18vw;
+                    top: 6vh;
+                    right: 24vw;
                 }
                 .inquiry {
-                    position: relative;
-                    top: -10vh
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    flex-basis: 50%;
+                    top: -45vh;
+                    left: 25vw;
+                    h2 {
+                        text-align: center;
+                    }
+                    form {
+                        margin-top: 2rem;
+                        .form-row {
+                            flex-wrap: wrap;
+                            flex-direction: row;
+                            justify-content: space-around;
+                            label {
+                                flex-basis: 35%;
+                            }
+                            input {
+                                flex-basis: 65%;
+                            }
+                            
+                            textarea {
+                                width: 70%;
+                                margin: auto;
+                                overflow-y: scroll;
+                            }
+                        }
+                        .button {
+                            width: 40%;
+                        }
+                    }
                 }
             }
         }
@@ -1117,7 +1148,7 @@ body {
             }
         }
     }
-    @media only screen and (min-width: 1200px) and (min-height: 801px) {
+    @media only screen and (min-width: 1200px) and (min-height: 800px) {
         .contact-header {
             height: 100%;
             .contact-bg {
