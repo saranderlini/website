@@ -36,7 +36,6 @@
     box-shadow: 10px 0 12px darken($home-bg-color, 25), -10px 0 12px darken($home-bg-color, 25);
     border-radius: 5px;
     margin-top: 1rem;
-    
 } 
 
 /* to make window boxes, this one served first and foremost the bg-text */
@@ -148,3 +147,21 @@
     height: 5vh;
 }
 
+/* large-sized screen for the inquiry-div*/
+@mixin inquiry-wide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    padding: inherit 3rem;
+    margin: auto;
+    justify-content: center;
+    flex-basis: content;
+}
+
+/* large-sized screen for the form distribution*/
+@mixin form-wide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

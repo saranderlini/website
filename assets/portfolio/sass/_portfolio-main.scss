@@ -17,19 +17,8 @@ body {
             display: flex;
             position: relative;
             justify-content: center;
-            z-index: 0.11;
             height: 100vh;
-            width: 100%;
-    
-            &::before {
-                @include bg-text;
-                background-image: url(../../img/colorful-pad.svg);
-                transform: rotate(180deg);
-                background-size: 50% 20% 10%;
-                background-repeat: repeat-y;
-                background-color: transparentize($white-transparent, 0.48);            
-                background-blend-mode: overlay;
-            }
+            width: 100%;    
         /* Section containing the rotating elements */
         .portfolio-box {
             @include activity-par;
@@ -55,7 +44,6 @@ body {
             }
             .loading-section {
                 text-align: center;
-                /*color: lighten($text-black, 30);*/
                 padding: 3rem;
                 margin-bottom: 1rem;
                 i {
@@ -78,11 +66,7 @@ body {
     }  
     @media only screen and (max-width: 479px) {
         .portfolio-art {
-            &::before {
-                background-image: url(../../img/tall-pad.svg);
-            }
             .portfolio-box {
-                top: 15vh;
                 width: 99%;
                 height: fit-content;
                 .portfolio-title {
@@ -121,11 +105,7 @@ body {
     }
     @media only screen and (min-width: 480px) and (max-width: 660px) {
         .portfolio-art {
-            &::before {
-                background-image: url(../../img/tall-pad.svg);
-            }
             .portfolio-box {
-                top: 15vh;
                 .loading-section {
                     padding: 1rem;
                     i {
@@ -148,13 +128,10 @@ body {
             }
         }
     }  
-    @media only screen and (min-width: 661px) and (max-width: 900px) and (max-height: 1000px) {
+    
+    @media only screen and (min-width: 661px) and (max-width: 900px) {
         .portfolio-art {
-            &::before {
-                background-image: url(../../img/mid-pad.svg);
-            }
             .portfolio-box {
-                top: 15vh;
                 .loading-desc {
                     word-break: keep-all;
                     padding-left: 2rem;
@@ -171,57 +148,22 @@ body {
         }
     }
 
-    @media only screen and (min-width: 661px) and (max-width: 900px) and (min-height: 1001px) {
+    @media only screen and (min-width: 901px) and (max-width: 1120px) {
         .portfolio-art {
-            &::before {
-                background-image: url(../../img/mid-pad.svg);
-            }
             .portfolio-box {
-                top: 10vh;
+                width: 95%;
                 .loading-desc {
-                    word-break: keep-all;
-                    padding-left: 2rem;
-                    line-height: 2rem;
-                    -webkit-text-size-adjust: 20px;
-                    width: 90%;
-                    .panick {
-                        font-size: 21px;
-                        margin-bottom: 1rem;
-                        padding-left: none;
-                    }
+                    width: 60%;
                 }
             }
         }
     }
 
-    @media only screen and (min-width: 901px) and (max-width: 1120px) and (max-height: 799px) {
-        .portfolio-art {
-            .portfolio-box {
-                width: 95%;
-                top: 13vh;
-                .loading-desc {
-                    width: 60%;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 901px) and (max-width: 1120px) and (min-height: 800px) {
-        .portfolio-art {
-            .portfolio-box {
-                width: 95%;
-                top: 8vh;
-                .loading-desc {
-                    width: 60%;
-                }
-            }
-        }
-    }
     @media only screen and (min-width: 1121px) and (min-height: 800px) {
         width: 100vw;
         .portfolio-art {
             .portfolio-box {
                 width: 95%;
-                top: 18vh;
                 .loading-desc {
                     width: 60%;
                 }

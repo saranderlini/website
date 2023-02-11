@@ -14,9 +14,8 @@ body {
             }
         }
     }
-
-    /* Footer's position depedning on viewport's width and height */
-    @media only screen and (max-width: 479px) and (max-height: 700px) {
+    /* Footer's position depending on viewport's width and height */
+    @media only screen and (max-width: 479px) {
         .footer {
             .to-top-page {
                 img {
@@ -28,91 +27,15 @@ body {
             }
         }
     }
-    @media only screen and (max-width: 479px) and (min-height: 701px) and (max-height: 790px) {
-        .footer {
-            .to-top-page {
-                img {
-                    width: 40px;
-                    height: 40px;
-                    bottom: 13vh;
-                    left: 2vw; 
-                }
-            }
-        }
-    }
 
-    @media only screen and (min-width: 479px) and (max-height: 790px) {
-        .footer {
-            .to-top-page {
-                img {
-                    width: 40px;
-                    height: 40px;
-                    bottom: 10vh;
-                    left: 2vw; 
-                }
-            }
-        }
-    }
-
-    @media only screen and (min-width: 479px) and (min-height: 791px) and (max-height: 814px) {
-        .footer {
-            .to-top-page {
-                img {
-                    width: 40px;
-                    height: 40px;
-                    bottom: 23vh;
-                    left: 2vw; 
-                }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 479px) and (min-height: 815px) and (max-height: 840px) {
-        .footer {
-            .to-top-page {
-                img {
-                    width: 40px;
-                    height: 40px;
-                    bottom: 2vh;
-                    left: 2vw; 
-                }
-            }
-        }
-    }
-    @media only screen and (max-width: 479px) and (min-height: 841px) and (max-height: 880px) {
-        .footer {
-            .to-top-page {
-                img {
-                    width: 40px;
-                    height: 40px;
-                    bottom: 25vh;
-                    left: 2vw;    
-                }
-            }
-        }
-    } 
-
-    @media only screen and (max-width: 479px) and (min-height: 881px) {
-        .footer {
-            .to-top-page {
-                img {
-                    width: 40px;
-                    height: 40px;
-                    bottom: 28vh;
-                    left: 2vw;    
-                }
-            }
-        }
-    } 
-
-    @media only screen and (min-width: 480px)and (max-width: 660px) {
+    @media only screen and (min-width: 480px) and (max-width: 660px) {
         .footer {
             .to-top-page {
                 img {
                     width: 45px;
                     height: 45px;
-                    bottom: 2vh;
-                    left: 1vw;    
+                    bottom: 8vh;
+                    left: 3vw;    
                 }
             }
         }
@@ -123,57 +46,19 @@ body {
                 img {
                     width: 45px;
                     height: 45px;
-                    bottom: 2vh;
+                    bottom: 14vh;
                     left: 2vw;    
                 }
             }
         }
-    } 
-    @media only screen and (min-width: 661px)  and (max-width: 900px) and (min-height: 801px) and (max-height: 1100px) {
-        .footer {
-            .to-top-page {
-                img {
-                    width: 47px;
-                    height: 47px;
-                    bottom: 35vh;
-                    left: 2.5vw;    
-                }
-            }
-        }
     }
-
-    @media only screen and (min-width: 661px)  and (max-width: 900px) and (min-height: 801px) and (min-height: 1101px) {
-        .footer {
-            .to-top-page {
-                img {
-                    width: 47px;
-                    height: 47px;
-                    bottom: 45vh;
-                    left: 2.5vw;    
-                }
-            }
-        }
-    }
-
-    @media only screen and (min-width: 901px) and (max-height: 800px) {
+    @media only screen and (min-width: 901px) {
         .footer {
             .to-top-page {
                 img {
                     width: 47px;
                     height: 47px;
                     bottom: 2.5vh;
-                    left: 2.5vw;    
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 901px) and (min-height: 801px) {
-        .footer {
-            .to-top-page {
-                img {
-                    width: 47px;
-                    height: 47px;
-                    bottom: 52vh;
                     left: 2.5vw;    
                 }
             }

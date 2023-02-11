@@ -1,5 +1,4 @@
 body {
-    height: 100%;
     .nav-bar {
         .sandwich {
             ul {
@@ -14,19 +13,6 @@ body {
     }
     /* background */
     .bg-about-me-home {
-        @include bg-photo;
-        justify-content: center;
-        z-index: 0.11;
-        height: 100%;
-
-        &::before {
-            @include bg-text;
-            background-image: url(../../img/colorful-pad.svg);
-            background-size: 100%;
-            background-repeat: repeat-y;
-            background-color: transparentize($white-transparent, 0.55);            
-            background-blend-mode: overlay;
-        }
         /* wrapper for article */
         article {
         position: relative;
@@ -64,39 +50,43 @@ body {
             }
         }
     }
-    /* Setting up different backgrounds, depending on responsiveness */
-    @media only screen and (max-width: 600px) {
-    .bg-about-me-home {
-        min-height: 100%;
-        &::before {
-            background-image: url(../../img/bg-about-me-small.svg);
-            background-size: 130%;
-        }
-        article {
-            .brief {
-                width: 90%;
-                margin: auto;   
-            }    
-        }
-    }   
+}
+/* Setting up different backgrounds, depending on responsiveness (default for small screens) */
+@media only screen and (max-width: 660px) {
+    body {
+        .bg-about-me-home {
+            article {
+                .brief {
+                    width: 90%;
+                    margin: auto;   
+                }    
+            }
+        }   
     }
-    @media only screen and (min-width: 601px) and (max-width: 900px) {
+}
+
+/* medium-sized screens (default) */
+@media only screen and (min-width: 661px) and (max-width: 900px) {
+    body {
+        .bg-about-me-home {
+            .brief {
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+/* large-sized screens */
+@media only screen and (min-width: 901px) {
+    body {
         .bg-about-me-home {
             min-height: fit-content;
-            &::before {
-                background-image: url(../../img/bg-about-me-medium.svg);
-            }
-        .brief {
-            width: 80%;
-            margin: auto;
-        }
-        }
-    }
-    @media only screen and (min-width: 991px) {
-        .brief {
-            p {
-                max-width: 70%;
-                margin: auto;
+            .brief {
+                p {
+                    max-width: 70%;
+                    margin: auto;
+                }
             }
         }
     }
