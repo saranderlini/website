@@ -239,11 +239,27 @@ html {
                     }
                     .contact-box {
                         right: -18vw;
-                        bottom: 30vh;
+                        bottom: 20vh;
                     }
                     .inquiry {
                         bottom: 20vh;
                         right: -10vw;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-height: 1000px) {
+        html {
+            body {
+                .main {
+                    .contact-main-div {
+                        .contact-box {
+                            bottom: 15vh;
+                        }
+                        .inquiry {
+                            bottom: 10vh;
+                        }
                     }
                 }
             }
@@ -266,8 +282,8 @@ html {
                     }
                     .inquiry {
                         @include inquiry-wide;
-                        top: 65vh;
-                        left: 20%;
+                        bottom: 8vh;
+                        margin: auto;
                         h2 {
                             margin: auto;
                             flex-basis: 100%;
@@ -309,6 +325,25 @@ html {
             }
         }
     }
+    @media only screen and (min-height: 1000px) {
+        html {
+            body {
+                .main {
+                    .contact-main-div {
+                        .sara-contact-pic {
+                            top: 19vh;
+                        }
+                        .contact-box {
+                            bottom: 5vh;
+                        }
+                        .inquiry {
+                            top: 10vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media only screen and (min-width: 1001px) and (max-width: 1299px) {
     html {
@@ -317,16 +352,17 @@ html {
                 .contact-main-div {
                     .sara-contact-pic {
                         width: 280px;
-                        left: 2vw;
-                        top: 13vh;  
+                        left: 5vw;
+                        top: 15vh;  
                     }
                     .contact-box {
-                        top: 5vh;
+                        top: 15vh;
                         left: -32vw;
                     }
                     .inquiry {
                         @include inquiry-wide;
-                        top: 20vh;
+                        position: absolute;
+                        top: 19vh;
                         right: 1vw;
                         h2 {
                             margin: auto;
@@ -367,6 +403,31 @@ html {
                     }
                 }
             }
+            .contact--footer {
+                background-color: transparent;
+            }
+        }
+    }
+    @media only screen and (min-height: 1000px) {
+        html {
+            body {
+                .main {
+                    .contact-main-div {
+                        .sara-contact-pic {
+                            top: 8vh;
+                        }
+                        .contact-box {
+                            bottom: 5vh;
+                        }
+                        .inquiry {
+                            top: 10vh;
+                        }
+                    }
+                    .contact--footer {
+                        background-color: transparent;
+                    }
+                }
+            }
         }
     }
 }
@@ -377,16 +438,17 @@ html {
                 .contact-main-div {
                     .sara-contact-pic {
                         width: 280px;
-                        left: 2vw;
-                        top: 13vh;  
+                        left: 12vw;
+                        top: 15vh;  
                     }
                     .contact-box {
-                        top: 5vh;
+                        top: 15vh;
                         left: -32vw;
                     }
                     .inquiry {
                         @include inquiry-wide;
-                        top: 20vh;
+                        position: absolute;
+                        top: 18vh;
                         right: 5vw;
                         h2 {
                             margin: auto;
@@ -424,6 +486,31 @@ html {
                                 margin: auto;
                             }
                         }    
+                    }
+                }
+            }
+            .contact--footer {
+                background-color: transparent;
+            }
+        }
+    }
+    @media only screen and (min-height: 1000px) {
+        html {
+            body {
+                .main {
+                    .contact-main-div {
+                        .sara-contact-pic {
+                            top: 8vh;
+                        }
+                        .contact-box {
+                            bottom: 5vh;
+                        }
+                        .inquiry {
+                            top: 10vh;
+                        }
+                    }
+                    .contact--footer {
+                        background-color: transparent;
                     }
                 }
             }

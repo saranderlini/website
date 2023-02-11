@@ -190,6 +190,10 @@ a {
         background: url(../../img/bg-about-me-medium.svg) center center fixed; 
         background-color: transparentize($white-transparent, 0.58);            
         background-blend-mode: overlay;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         $base-font-size: 20px;
         body {
             font-size: $base-font-size;        
@@ -245,6 +249,10 @@ a {
 @media only screen and (min-width: 901px) {
     html {
         background: url(../../img/colorful-pad.svg) center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         background-color: transparentize($white-transparent, 0.58);            
         background-blend-mode: overlay;
         $base-font-size: 20px;
