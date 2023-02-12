@@ -1,7 +1,7 @@
 body {
     .footer {
         height: none;
-        background-color: $beige;
+        background-color: transparent;
         .to-top-page {
             img {
                 z-index: 999;
@@ -17,6 +17,7 @@ body {
     /* Footer's position depending on viewport's width and height */
     @media only screen and (max-width: 479px) {
         .footer {
+            background-color: transparent;
             .to-top-page {
                 img {
                     width: 40px;
@@ -30,6 +31,7 @@ body {
 
     @media only screen and (min-width: 480px) and (max-width: 660px) {
         .footer {
+            background-color: transparent;
             .to-top-page {
                 img {
                     width: 45px;
@@ -42,6 +44,7 @@ body {
     } 
     @media only screen and (min-width: 661px) and (max-width: 900px) {
         .footer {
+            background-color: transparent;
             .to-top-page {
                 img {
                     width: 45px;
@@ -54,6 +57,7 @@ body {
     }
     @media only screen and (min-width: 901px) {
         .footer {
+            background-color: transparent;
             .to-top-page {
                 img {
                     width: 47px;

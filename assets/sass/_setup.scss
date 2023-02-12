@@ -36,8 +36,6 @@
 body {
     font-family: "fs", sans-serif;
     font-weight: 300;
-
-    /*background-color: $beige;*/
 }
 
 em {
@@ -123,12 +121,12 @@ a {
                         background-image: url(../img/tall-pad.svg);
                         transform: rotateX(180deg);
                     }
-                .bg-text {
-                    padding: 1.5rem 1rem;
-                    strong {
-                        font-size: 19px;
+                    .bg-text {
+                        padding: 1.5rem 1rem;
+                        strong {
+                            font-size: 19px;
+                        }
                     }
-                }
                 }
             }
         }
