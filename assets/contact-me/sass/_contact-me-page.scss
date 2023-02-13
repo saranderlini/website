@@ -1,11 +1,4 @@
 html {
-    background: url(../../img/tall-pad.svg) center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: transparentize($white-transparent, 0.58);            
-    background-blend-mode: overlay;
     body {
         .nav-bar {
             .nav-bar_right {

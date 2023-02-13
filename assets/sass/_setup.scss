@@ -97,13 +97,13 @@ a {
 /* Small-sized screens */
 @media only screen and (max-width: 479px) {
     html {
-        background: url(../../img/tall-pad.svg) center center fixed; 
+        background: url(../../img/leaf-small.svg) center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background-color: transparentize($white-transparent, 0.58);            
         background-blend-mode: overlay;
+        background-color: transparentize($white-transparent, 0.9);
         $base-font-size: 16px;
         body {
             font-size: $base-font-size;
@@ -143,6 +143,7 @@ a {
         background-size: cover;
         background-color: transparentize($white-transparent, 0.58);            
         background-blend-mode: overlay;
+
         $base-font-size: 18px;
         body {
             font-size: $base-font-size;
