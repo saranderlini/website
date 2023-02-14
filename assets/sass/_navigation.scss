@@ -64,6 +64,7 @@ body {
     .nav-bar_right {
         color: darken($beige, 20);
         height: fit-content;
+        margin: 2px 5px 0;
         /* any other page: contact me button */
         .nav-bar_right-logo {
             position: relative;
@@ -77,7 +78,7 @@ body {
                 border: 3px solid $text-black;
                 border-radius: 50%;
             }
-            h3 {
+            .nav-bar_rght-desc {
                 visibility: collapse;
                 color: transparent;
                 position: absolute;
@@ -91,7 +92,7 @@ body {
                 img {
                     visibility: collapse;
                 }
-                h3 {
+                .nav-bar_rght-desc {
                     display: block;
                     margin: auto;
                     visibility: visible;
@@ -202,11 +203,10 @@ body {
             .nav-bar_right {
                 position: fixed;
                 left: 80vw;
-                top: 5px;
                 @media (hover:hover) {
                     .nav-bar_right-logo:hover {
                         top: 12px;
-                        h3 {
+                        .nav-bar_rght-desc {
                             left: -15vw;
                             background-color: lighten($black, 5);
                             border-radius: 25px;
@@ -220,14 +220,14 @@ body {
             }
         }
 
-        @media only screen and (min-width: 471px) and (max-width: 660px) {
+        @media only screen and (min-width: 471px) and (max-width: 690px) {
             .nav-bar_right {
                 position: fixed;
                 left: 85vw;
                 @media (hover:hover) {
                     .nav-bar_right-logo:hover {
                         top: 8px;
-                        h3 {
+                        .nav-bar_rght-desc {
                             left: -11vw;
                             background-color: lighten($black, 5);
                             border-radius: 25px;
@@ -239,7 +239,7 @@ body {
                 }
             }
         }
-        @media only screen and (min-width: 661px) and (max-width: 900px) {
+        @media only screen and (min-width: 691px) and (max-width: 900px) {
             .nav-bar_right {
                 position: fixed;
                 left: 90vw;
@@ -252,8 +252,9 @@ body {
                 }
                 @media (hover:hover) {
                     .nav-bar_right-logo:hover {
-                        h3 {
-                            left: -53px;
+                        .nav-bar_rght-desc {
+                            left: -63px;
+                            top: 10px;
                             height: fit-content;
                             white-space: nowrap;
                         }
@@ -266,6 +267,7 @@ body {
     @media only screen and (min-width: 901px) {
             .sandwich {
                 flex-basis: 50%;
+                position: relative;
                 .sandwich--logo {
                     display: none;
                 }
@@ -276,26 +278,32 @@ body {
                     list-style-type: none;
                     flex-basis: 100%;
                     .a, .b, .c {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         flex-basis: 30%;
-                        img {
-                            display: block;
-                            margin: auto;
-                            position: relative;
-                            top: 24%;
+                        .sandwich_icon_menu {
+                            display: flex;
+                            justify-content: center;
+                            img {
+                                position: relative;
+                                left: 25%;
+                                display: inline-block;
+                                margin: auto;
+                            }
                         }
                         h3 {
                             visibility: collapse;
                             color: transparent;
-                            
-                        }
-                        .nav-bar_svg {
-                            top: 24%;
+                            margin: auto;
+                            position: relative;
+                            right: 25%;
                         }
                     }
                 }
                 @media (hover:hover) {
                     .a:hover, .b:hover, .c:hover {
-                        img {
+                        .sandwich_icon_menu {
                             visibility: collapse;
                         }
                         h3 {
@@ -320,15 +328,15 @@ body {
             display: flex;
             padding: 10px;
             position: relative;
-            bottom: -5px;
             right: 30px;
             height: 100%;
             align-items: baseline;
             @media (hover:hover) {
                 .nav-bar_right-logo:hover {
-                    h3 {
+                    .nav-bar_rght-desc {
                         height: fit-content;
                         white-space: nowrap;
+                        top: 10px;
                     }
                 }
             }
