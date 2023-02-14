@@ -78,7 +78,7 @@ body {
                 border: 3px solid $text-black;
                 border-radius: 50%;
             }
-            .nav-bar_rght-desc {
+            .nav-bar_right-desc {
                 visibility: collapse;
                 color: transparent;
                 position: absolute;
@@ -92,7 +92,7 @@ body {
                 img {
                     visibility: collapse;
                 }
-                .nav-bar_rght-desc {
+                .nav-bar_right-desc {
                     display: block;
                     margin: auto;
                     visibility: visible;
@@ -102,7 +102,7 @@ body {
                     transition-property: color;
                     transition-duration: 0.7s;
                     transition-timing-function: ease-in;
-                    position: absolute;
+                    position: absolute;    
                 }
             }
         }
@@ -203,10 +203,14 @@ body {
             .nav-bar_right {
                 position: fixed;
                 left: 80vw;
+                .nav-bar_right-desc {
+                    visibility: collapse;
+                    color: transparent;
+                }
                 @media (hover:hover) {
                     .nav-bar_right-logo:hover {
                         top: 12px;
-                        .nav-bar_rght-desc {
+                        .nav-bar_right-desc {
                             left: -15vw;
                             background-color: lighten($black, 5);
                             border-radius: 25px;
@@ -227,7 +231,7 @@ body {
                 @media (hover:hover) {
                     .nav-bar_right-logo:hover {
                         top: 8px;
-                        .nav-bar_rght-desc {
+                        .nav-bar_right-desc {
                             left: -11vw;
                             background-color: lighten($black, 5);
                             border-radius: 25px;
@@ -252,7 +256,7 @@ body {
                 }
                 @media (hover:hover) {
                     .nav-bar_right-logo:hover {
-                        .nav-bar_rght-desc {
+                        .nav-bar_right-desc {
                             left: -63px;
                             top: 10px;
                             height: fit-content;
@@ -333,7 +337,7 @@ body {
             align-items: baseline;
             @media (hover:hover) {
                 .nav-bar_right-logo:hover {
-                    .nav-bar_rght-desc {
+                    .nav-bar_right-desc {
                         height: fit-content;
                         white-space: nowrap;
                         top: 10px;
