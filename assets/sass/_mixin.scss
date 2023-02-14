@@ -31,7 +31,7 @@
 
 /* Outline for paragraph like the ones in the work-education page */
 @mixin activity-par {
-    background-color: darken($beige, 0.2);
+    background-color: darken($beige, 0.45);
     backdrop-filter: blur(0);
     box-shadow: 10px 0 12px darken($home-bg-color, 25), -10px 0 12px darken($home-bg-color, 25);
     border-radius: 5px;
