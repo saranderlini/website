@@ -110,6 +110,7 @@ body {
     @media only screen and (max-width: 660px) {
         .nav-bar {
             padding: 15px;
+            max-height: min-content;
         }
     }
     @media only screen and (min-width: 661px) and (max-width: 900px) {
