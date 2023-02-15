@@ -97,7 +97,7 @@ a {
 /* Small-sized screens */
 @media only screen and (max-width: 479px) {
     html {
-        background: url(../../img/leaf-small.svg) center center fixed; 
+        background: url(../../img/trianglify-lowres.png) center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -122,8 +122,15 @@ a {
                         transform: rotateX(180deg);
                     }
                     .bg-text {
-                        padding: 1.8rem 1rem 1.5rem 1rem;
-                        -webkit-padding: 1.8rem 1rem 1.5rem 1rem;
+                        display: flex;
+                        padding: 1.5rem 1rem;
+                        -webkit-padding: 1.5rem 1rem;
+                        flex-direction: column;
+                        -ms-flex-direction: column;
+                        justify-content: space-around;
+                        br {
+                            display: none;
+                        }
                         strong {
                             font-size: 19px;
                         }
@@ -218,8 +225,7 @@ a {
     
                 .bg-text {
                     width: 120px;
-    
-                    h1 {
+                    .bg-text--title {
                         font-size: calc($base-font-size + 2rem);
                     }
                     strong {
@@ -266,7 +272,7 @@ a {
                     }
     
                     .bg-text {
-                        h1 {
+                        .bg-text--title {
                             font-size: calc($base-font-size + 2.5rem);
                         }
                         strong {
