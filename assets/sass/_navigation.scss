@@ -200,7 +200,7 @@ body {
             }    
         }
         /* Positioning of the contact-me button on smaller screens */
-        @media only screen and (max-width: 470px) {
+        @media only screen and (max-width: 479px) {
             .nav-bar_right {
                 position: fixed;
                 left: 80vw;
@@ -225,7 +225,7 @@ body {
             }
         }
 
-        @media only screen and (min-width: 471px) and (max-width: 690px) {
+        @media only screen and (min-width: 480px) and (max-width: 690px) {
             .nav-bar_right {
                 position: fixed;
                 left: 85vw;

@@ -68,7 +68,7 @@ html {
                             border-color: lighten($text-black, 5);
                         }
                         .contact-box--title {
-                            word-break: break-all;    
+                            white-space: pre-line;    
                         }
                     }
                     .contact-list {
