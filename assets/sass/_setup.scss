@@ -97,7 +97,7 @@ a {
 /* Small-sized screens */
 @media only screen and (max-width: 479px) {
     html {
-        background: url(../../img/trianglify-lowres.png) center center fixed; 
+        background: url(../../img/triangle-500.svg) center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -118,7 +118,8 @@ a {
             .header {
                 .bg-home {
                    &::before {
-                        background-image: url(../img/tall-pad.svg);
+                        /*background-image: url(../img/tall-pad.svg);*/
+                        background-image: url(../img/triangles--tall-small.svg);
                         transform: rotateX(180deg);
                     }
                     .bg-text {
@@ -142,7 +143,7 @@ a {
 /* smaller screens (default) */
 @media only screen and (min-width: 480px) and (max-width: 690px) {
     html {
-        background: url(../../img/leaf-700.svg) center center fixed; 
+        background: url(../../img/triangle-700.svg) center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -167,7 +168,7 @@ a {
                 .bg-home {
                     height: 100vh;
                    &::before {
-                        background-image: url(../img/tall-pad.svg);
+                        background-image: url(../img/triangles--tall-medium.svg);
                         transform: rotateX(180deg);
                     }
                 .bg-text {
@@ -193,7 +194,7 @@ a {
 @media only screen and 
 (min-width: 691px) and (max-width: 900px) {
     html {
-        background: url(../../img/leaf-circle-900.svg) center center fixed; 
+        background: url(../../img/triangle-900.svg) center center fixed; 
         background-color: transparentize($white-transparent, 0.58);            
         background-blend-mode: overlay;
         -webkit-background-size: cover;
@@ -253,7 +254,7 @@ a {
 /* big-sized screens (default) */
 @media only screen and (min-width: 901px) {
     html {
-        background: url(../../img/leaf-circle-1200.svg) center center fixed; 
+        background: url(../../img/triangle-1200.svg) center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -267,7 +268,7 @@ a {
             .header {
                 .bg-home {
                     &::before {
-                        background-image: url(../img/colorful-pad.svg);
+                        background-image: url(../img/triangles--home-large.svg);
                     }
     
                     .bg-text {
