@@ -55,8 +55,10 @@ body {
                     width: fit-content;
                     margin: auto;
                     background: linear-gradient(to right, $blue, lighten($purple, 5));
+                    background-clip: text;
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
+                    background-clip: text;
                 }         
                 /* Web development section */
                 .web-d {
@@ -108,6 +110,7 @@ body {
                     background: linear-gradient(to right, $salmon, $orange);
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
+                    background-clip: text;
                 }
                 .s-s-label {
                     li {

@@ -33,6 +33,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "nidus_sansregular";
+    src: url(../font/nidus_sans/nidsans-webfont.eot);
+    src: 
+        url(../font/nidus_sans/nidsans-webfont.eot?#iefix) format(embedded-opentype), 
+        url(../font/nidus_sans/nidsans-webfont.woff) format(woff),
+         url(../font/nidus_sans/nidsans-webfont.woff2) format(woff2),
+         url(../font/nidus_sans/nidsans-webfont.ttf) format(truetype),
+         url(../font/nidus_sans/nidsans-webfont.svg#nidus_sansregular) format(svg);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     font-family: "fs", sans-serif;
     font-weight: 300;
@@ -49,7 +63,7 @@ strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Righteous";
+    font-family: "nidus_sansregular";
 }
 
 

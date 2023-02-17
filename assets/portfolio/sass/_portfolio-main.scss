@@ -50,6 +50,7 @@ body {
                     background: linear-gradient($black, $blue-lila);
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
+                    background-clip: text;
                 }
             }
             .loading-desc {
@@ -151,6 +152,7 @@ body {
     @media only screen and (min-width: 901px) and (max-width: 1120px) {
         .portfolio-art {
             .portfolio-box {
+                top: 22vh;
                 width: 95%;
                 .loading-desc {
                     width: 60%;
@@ -163,6 +165,7 @@ body {
         width: 100vw;
         .portfolio-art {
             .portfolio-box {
+                top: 25vh;
                 width: 95%;
                 .loading-desc {
                     width: 60%;
@@ -170,5 +173,4 @@ body {
             }
         }
     }
-    
 }
