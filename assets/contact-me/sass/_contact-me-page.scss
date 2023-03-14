@@ -27,12 +27,12 @@ html {
                     left: 3%;
                     width: 260px;
                     #myContactPic {
-                        width: 85%;
+                        width: 165%;
                     }
                     @media (hover:hover) {
                         #myContactPic:hover {
                             transition: width 0.4s ease-in;
-                            width: 100%;
+                            width: 140%;
                         }
                     }
                 }
