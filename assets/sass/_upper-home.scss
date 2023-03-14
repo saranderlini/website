@@ -11,7 +11,7 @@
         /* so that the opacity does not imapct the text */
         &::before {
             @include bg-text;
-            background-image: url(../img/triangles--home-medium.svg);
+            background-image: url(../img/bg-about-me-medium.svg);
             background-repeat: no-repeat;
             opacity: 1;
         }
